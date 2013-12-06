@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="scb-nq-ffL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pYE-Ph-nik">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Card Collection View Controller-->
-        <scene sceneID="G9o-vH-hWM">
-            <objects>
-                <viewController storyboardIdentifier="CardCollectionViewController" id="scb-nq-ffL" customClass="CardCollectionViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CyM-Xp-Q0j"/>
-                        <viewControllerLayoutGuide type="bottom" id="e4W-Rl-oAh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FLq-7V-JnI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uxQ-1F-18p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="517" y="12"/>
-        </scene>
-        <!--Heroine Detail View Controller-->
+        <!--Heroine View Controller-->
         <scene sceneID="CnQ-Ix-qDz">
             <objects>
-                <viewController storyboardIdentifier="HeroineDetailViewController" id="vnB-Eo-9lc" customClass="HeroineDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HeroineViewController" id="vnB-Eo-9lc" customClass="HeroineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="blM-Ss-Sbb"/>
                         <viewControllerLayoutGuide type="bottom" id="akI-3O-OD1"/>
@@ -59,18 +41,36 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biography" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mD-bt-juo">
+                                <rect key="frame" x="20" y="310" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you know?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL7-e2-6gg">
+                                <rect key="frame" x="20" y="358" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Life Advice from Our Heroine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCG-oo-ZFY">
+                                <rect key="frame" x="20" y="401" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4s-2m-9Fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="674"/>
+            <point key="canvasLocation" x="1873" y="697"/>
         </scene>
-        <!--Superheroine Detail View Controller-->
+        <!--Superheroine View Controller-->
         <scene sceneID="I1D-El-bhG">
             <objects>
-                <viewController storyboardIdentifier="SuperheroineDetailViewController" id="Zdf-hw-fF4" customClass="SuperheroineDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SuperheroineViewController" id="Zdf-hw-fF4" customClass="SuperheroineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KpV-pl-K1K"/>
                         <viewControllerLayoutGuide type="bottom" id="SgE-Hb-iAp"/>
@@ -104,13 +104,25 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Biography" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5K-4P-Tv6">
+                                <rect key="frame" x="20" y="308" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Superpowers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7b-f4-mVh">
+                                <rect key="frame" x="20" y="348" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZfZ-wR-hR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="674"/>
+            <point key="canvasLocation" x="2242" y="697"/>
         </scene>
         <!--Create Card View Controller-->
         <scene sceneID="MVu-8X-27V">
@@ -206,10 +218,151 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QcK-m1-Z1P">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="MJ9-tj-3lK"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="MJ9-tj-3lK" id="XXa-Jk-T3f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upi-c2-tTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="14"/>
+            <point key="canvasLocation" x="1929" y="-407"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="xcw-XK-178">
+            <objects>
+                <viewController id="pYE-Ph-nik" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aye-uv-tx5"/>
+                        <viewControllerLayoutGuide type="bottom" id="XXH-xY-NZr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q7v-BB-JfK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="x2E-O0-vFR" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="qhw-2W-EL2"/>
+                        <segue destination="KSN-ug-0y1" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="Lwd-D1-ZUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xZh-hf-YcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="379"/>
+        </scene>
+        <!--Main Navigation View Controller-->
+        <scene sceneID="3B4-qT-MrE">
+            <objects>
+                <viewController storyboardIdentifier="MainNavigationViewController" id="x2E-O0-vFR" customClass="MainNavigationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D9l-Mf-h1G"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jef-85-Zge"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uqR-Cx-5Ub">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUPERHEROINE JUSTICE LEAGUE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lm-rB-UQf">
+                                <rect key="frame" x="20" y="20" width="280" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKh-rq-DOO">
+                                <rect key="frame" x="20" y="117" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create A New Card">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cwi-bb-CtP" kind="custom" customClass="SWRevealViewControllerSegue" id="NgZ-Xz-xWc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJ5-d0-XdQ">
+                                <rect key="frame" x="32" y="155" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="azp-Ar-5Jq" kind="custom" customClass="SWRevealViewControllerSegue" id="EqM-Nc-1ax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvb-Yh-rZ6">
+                                <rect key="frame" x="39" y="513" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPz-KL-pxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018" y="37"/>
+        </scene>
+        <!--Cards View Controller-->
+        <scene sceneID="MWb-3D-j22">
+            <objects>
+                <viewController storyboardIdentifier="CardsViewController" id="azp-Ar-5Jq" customClass="CardsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wow-NI-N1x"/>
+                        <viewControllerLayoutGuide type="bottom" id="ci1-cn-bPW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I8I-O8-hco">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="j5G-3F-KT1">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="9Vi-Dk-7aF"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="9Vi-Dk-7aF" id="dL8-Hq-3ma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7b6-bd-igj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="697"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wCp-Uy-LMu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KSN-ug-0y1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oOm-w0-1x6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="azp-Ar-5Jq" kind="relationship" relationship="rootViewController" id="lT5-0I-0wz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nU1-BS-2VW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="697"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hat-wF-Dd3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U1G-VL-DZo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qk1-8h-Ngk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cwi-bb-CtP" kind="relationship" relationship="rootViewController" id="8V1-ak-Yfj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luo-Aj-4eK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="-407"/>
         </scene>
     </scenes>
     <resources>
@@ -225,4 +378,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="NgZ-Xz-xWc"/>
+        <segue reference="EqM-Nc-1ax"/>
+    </inferredMetricsTieBreakers>
 </document>

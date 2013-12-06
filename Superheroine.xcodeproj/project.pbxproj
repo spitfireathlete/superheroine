@@ -14,7 +14,6 @@
 		EA16C5CE18512ED3000E5B54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5CD18512ED3000E5B54 /* main.m */; };
 		EA16C5D218512ED3000E5B54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5D118512ED3000E5B54 /* AppDelegate.m */; };
 		EA16C5D518512ED3000E5B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA16C5D318512ED3000E5B54 /* Main.storyboard */; };
-		EA16C5D818512ED3000E5B54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C5D718512ED3000E5B54 /* ViewController.m */; };
 		EA16C5DA18512ED3000E5B54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA16C5D918512ED3000E5B54 /* Images.xcassets */; };
 		EA16C5E118512ED3000E5B54 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5E018512ED3000E5B54 /* XCTest.framework */; };
 		EA16C5E218512ED3000E5B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C118512ED3000E5B54 /* Foundation.framework */; };
@@ -24,6 +23,13 @@
 		EA16C5FA18513615000E5B54 /* facebook_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C5F718513615000E5B54 /* facebook_icon.png */; };
 		EA16C5FB18513615000E5B54 /* pinterest_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C5F818513615000E5B54 /* pinterest_icon.png */; };
 		EA16C5FC18513615000E5B54 /* twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C5F918513615000E5B54 /* twitter_icon.png */; };
+		EA16C609185169A0000E5B54 /* CreateCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C608185169A0000E5B54 /* CreateCardViewController.m */; };
+		EA16C60C185169B0000E5B54 /* HeroineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C60B185169B0000E5B54 /* HeroineViewController.m */; };
+		EA16C60F185169B7000E5B54 /* SuperheroineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C60E185169B7000E5B54 /* SuperheroineViewController.m */; };
+		EA16C612185169D6000E5B54 /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C611185169D6000E5B54 /* MainNavigationViewController.m */; };
+		EA16C615185169E5000E5B54 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C614185169E5000E5B54 /* DashboardViewController.m */; };
+		EA16C61818516A8E000E5B54 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C61718516A8E000E5B54 /* SWRevealViewController.m */; };
+		EA16C61C1851D46E000E5B54 /* CardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C61B1851D46E000E5B54 /* CardsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +54,6 @@
 		EA16C5D018512ED3000E5B54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA16C5D118512ED3000E5B54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EA16C5D418512ED3000E5B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EA16C5D618512ED3000E5B54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EA16C5D718512ED3000E5B54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA16C5D918512ED3000E5B54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA16C5DF18512ED3000E5B54 /* SuperheroineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperheroineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA16C5E018512ED3000E5B54 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +63,20 @@
 		EA16C5F718513615000E5B54 /* facebook_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_icon.png; sourceTree = "<group>"; };
 		EA16C5F818513615000E5B54 /* pinterest_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterest_icon.png; sourceTree = "<group>"; };
 		EA16C5F918513615000E5B54 /* twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_icon.png; sourceTree = "<group>"; };
+		EA16C607185169A0000E5B54 /* CreateCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCardViewController.h; sourceTree = "<group>"; };
+		EA16C608185169A0000E5B54 /* CreateCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCardViewController.m; sourceTree = "<group>"; };
+		EA16C60A185169B0000E5B54 /* HeroineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroineViewController.h; sourceTree = "<group>"; };
+		EA16C60B185169B0000E5B54 /* HeroineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroineViewController.m; sourceTree = "<group>"; };
+		EA16C60D185169B7000E5B54 /* SuperheroineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperheroineViewController.h; sourceTree = "<group>"; };
+		EA16C60E185169B7000E5B54 /* SuperheroineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperheroineViewController.m; sourceTree = "<group>"; };
+		EA16C610185169D6000E5B54 /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
+		EA16C611185169D6000E5B54 /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
+		EA16C613185169E5000E5B54 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		EA16C614185169E5000E5B54 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		EA16C61618516A8E000E5B54 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EA16C61718516A8E000E5B54 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EA16C61A1851D46E000E5B54 /* CardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardsViewController.h; path = ../CardsViewController.h; sourceTree = "<group>"; };
+		EA16C61B1851D46E000E5B54 /* CardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardsViewController.m; path = ../CardsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +139,7 @@
 				EA16C5D018512ED3000E5B54 /* AppDelegate.h */,
 				EA16C5D118512ED3000E5B54 /* AppDelegate.m */,
 				EA16C5D318512ED3000E5B54 /* Main.storyboard */,
-				EA16C5D618512ED3000E5B54 /* ViewController.h */,
-				EA16C5D718512ED3000E5B54 /* ViewController.m */,
+				EA16C60018516949000E5B54 /* View Controllers */,
 				EA16C5D918512ED3000E5B54 /* Images.xcassets */,
 				EA16C5F618513609000E5B54 /* Image Assets */,
 				EA16C5C818512ED3000E5B54 /* Supporting Files */,
@@ -133,6 +150,7 @@
 		EA16C5C818512ED3000E5B54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA16C61918516A96000E5B54 /* SWRevealViewController */,
 				EA16C5C918512ED3000E5B54 /* Superheroine-Info.plist */,
 				EA16C5CA18512ED3000E5B54 /* InfoPlist.strings */,
 				EA16C5CD18512ED3000E5B54 /* main.m */,
@@ -167,6 +185,34 @@
 				EA16C5F918513615000E5B54 /* twitter_icon.png */,
 			);
 			name = "Image Assets";
+			sourceTree = "<group>";
+		};
+		EA16C60018516949000E5B54 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA16C61A1851D46E000E5B54 /* CardsViewController.h */,
+				EA16C61B1851D46E000E5B54 /* CardsViewController.m */,
+				EA16C607185169A0000E5B54 /* CreateCardViewController.h */,
+				EA16C608185169A0000E5B54 /* CreateCardViewController.m */,
+				EA16C610185169D6000E5B54 /* MainNavigationViewController.h */,
+				EA16C611185169D6000E5B54 /* MainNavigationViewController.m */,
+				EA16C60A185169B0000E5B54 /* HeroineViewController.h */,
+				EA16C60B185169B0000E5B54 /* HeroineViewController.m */,
+				EA16C60D185169B7000E5B54 /* SuperheroineViewController.h */,
+				EA16C60E185169B7000E5B54 /* SuperheroineViewController.m */,
+				EA16C613185169E5000E5B54 /* DashboardViewController.h */,
+				EA16C614185169E5000E5B54 /* DashboardViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EA16C61918516A96000E5B54 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA16C61618516A8E000E5B54 /* SWRevealViewController.h */,
+				EA16C61718516A8E000E5B54 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA16C5D818512ED3000E5B54 /* ViewController.m in Sources */,
+				EA16C612185169D6000E5B54 /* MainNavigationViewController.m in Sources */,
+				EA16C61C1851D46E000E5B54 /* CardsViewController.m in Sources */,
 				EA16C5D218512ED3000E5B54 /* AppDelegate.m in Sources */,
+				EA16C615185169E5000E5B54 /* DashboardViewController.m in Sources */,
+				EA16C60C185169B0000E5B54 /* HeroineViewController.m in Sources */,
+				EA16C609185169A0000E5B54 /* CreateCardViewController.m in Sources */,
+				EA16C61818516A8E000E5B54 /* SWRevealViewController.m in Sources */,
 				EA16C5CE18512ED3000E5B54 /* main.m in Sources */,
+				EA16C60F185169B7000E5B54 /* SuperheroineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

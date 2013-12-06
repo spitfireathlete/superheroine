@@ -9,8 +9,8 @@
             <objects>
                 <viewController storyboardIdentifier="HeroineViewController" id="vnB-Eo-9lc" customClass="HeroineViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="blM-Ss-Sbb"/>
-                        <viewControllerLayoutGuide type="bottom" id="akI-3O-OD1"/>
+                        <viewControllerLayoutGuide type="top" id="VE2-hM-Z1A"/>
+                        <viewControllerLayoutGuide type="bottom" id="16w-O2-CFt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uaD-El-bDH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -72,8 +72,8 @@
             <objects>
                 <viewController storyboardIdentifier="SuperheroineViewController" id="Zdf-hw-fF4" customClass="SuperheroineViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KpV-pl-K1K"/>
-                        <viewControllerLayoutGuide type="bottom" id="SgE-Hb-iAp"/>
+                        <viewControllerLayoutGuide type="top" id="7QD-mW-IhB"/>
+                        <viewControllerLayoutGuide type="bottom" id="b7e-G4-GXR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9rl-Pa-4gQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -129,113 +129,67 @@
             <objects>
                 <viewController storyboardIdentifier="CreateCardViewController" id="cwi-bb-CtP" customClass="CreateCardViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="P5B-zE-DuL"/>
-                        <viewControllerLayoutGuide type="bottom" id="YWG-jq-DAa"/>
+                        <viewControllerLayoutGuide type="top" id="Cmh-FE-ZQA"/>
+                        <viewControllerLayoutGuide type="bottom" id="e5i-3Z-PDF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DOF-ct-Pbb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVL-T3-CIR">
-                                <rect key="frame" x="20" y="46" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hd-0S-abc">
-                                <rect key="frame" x="20" y="126" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interesting Fact" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-Sa-ygN">
-                                <rect key="frame" x="20" y="206" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Life Lessons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fub-Wt-V0K">
-                                <rect key="frame" x="20" y="331" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quotes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMW-z4-4Yx">
-                                <rect key="frame" x="20" y="421" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="93C-BF-Aqq">
-                                <rect key="frame" x="20" y="68" width="280" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.31764705879999999" green="0.76862745099999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-n7-X1E">
-                                <rect key="frame" x="20" y="153" width="280" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.31764705879999999" green="0.76862745099999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZK-lc-Hij">
-                                <rect key="frame" x="20" y="233" width="280" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.31764705879999999" green="0.76862745099999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZX-mr-IJL">
-                                <rect key="frame" x="20" y="358" width="280" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.31764705879999999" green="0.76862745099999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="822-YD-Uxc">
-                                <rect key="frame" x="20" y="453" width="280" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.31764705879999999" green="0.76862745099999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvu-og-WD8">
-                                <rect key="frame" x="83" y="518" width="155" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Camera Button">
-                                    <color key="titleColor" red="0.31764705879999999" green="0.76862745099999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzO-Vx-HEH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-Rr-SV6">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJJ-fo-h5P">
+                                                <rect key="frame" x="87" y="341" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X6-MC-CXZ">
+                                                <rect key="frame" x="87" y="95" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="cwi-bb-CtP" id="q2p-PT-CCv"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="QcK-m1-Z1P">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="MJ9-tj-3lK"/>
                     </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="contentView" destination="KTZ-Rr-SV6" id="ZDm-rb-MER"/>
+                        <outlet property="label1" destination="1X6-MC-CXZ" id="ai7-ac-jlz"/>
+                        <outlet property="label2" destination="pJJ-fo-h5P" id="khr-fR-KyB"/>
                         <outlet property="menuButton" destination="MJ9-tj-3lK" id="XXa-Jk-T3f"/>
+                        <outlet property="scrollView" destination="vzO-Vx-HEH" id="oLI-Oe-PiP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upi-c2-tTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="-407"/>
+            <point key="canvasLocation" x="1948" y="-407"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="xcw-XK-178">
             <objects>
                 <viewController id="pYE-Ph-nik" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aye-uv-tx5"/>
-                        <viewControllerLayoutGuide type="bottom" id="XXH-xY-NZr"/>
+                        <viewControllerLayoutGuide type="top" id="aAh-1j-uTs"/>
+                        <viewControllerLayoutGuide type="bottom" id="NyM-Zc-0b5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="q7v-BB-JfK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -256,8 +210,8 @@
             <objects>
                 <viewController storyboardIdentifier="MainNavigationViewController" id="x2E-O0-vFR" customClass="MainNavigationViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="D9l-Mf-h1G"/>
-                        <viewControllerLayoutGuide type="bottom" id="Jef-85-Zge"/>
+                        <viewControllerLayoutGuide type="top" id="bmK-Jk-mLI"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKz-n4-gwO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uqR-Cx-5Ub">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -309,8 +263,8 @@
             <objects>
                 <viewController storyboardIdentifier="CardsViewController" id="azp-Ar-5Jq" customClass="CardsViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wow-NI-N1x"/>
-                        <viewControllerLayoutGuide type="bottom" id="ci1-cn-bPW"/>
+                        <viewControllerLayoutGuide type="top" id="3fx-FU-ryP"/>
+                        <viewControllerLayoutGuide type="bottom" id="QGk-h5-AuK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="I8I-O8-hco">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -379,7 +333,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="NgZ-Xz-xWc"/>
         <segue reference="EqM-Nc-1ax"/>
+        <segue reference="8V1-ak-Yfj"/>
     </inferredMetricsTieBreakers>
 </document>

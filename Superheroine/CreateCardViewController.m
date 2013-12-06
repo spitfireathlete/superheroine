@@ -13,8 +13,9 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
-@property (strong, nonatomic) IBOutlet UILabel *label1;
-@property (strong, nonatomic) IBOutlet UILabel *label2;
+@property (strong, nonatomic) IBOutlet UILabel *name;
+@property (strong, nonatomic) IBOutlet UILabel *twitter;
+
 
 @end
 
@@ -32,12 +33,12 @@
     self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 910)];
     
 
-    self.label1.autoresizingMask = UIViewAutoresizingNone;
+    self.name.autoresizingMask = UIViewAutoresizingNone;
 
-    self.label2.autoresizingMask = UIViewAutoresizingNone;
+    self.twitter.autoresizingMask = UIViewAutoresizingNone;
     
-    [self.contentView addSubview:self.label1];
-    [self.contentView addSubview:self.label2];
+    [self.contentView addSubview:self.name];
+    [self.contentView addSubview:self.twitter];
     
     self.scrollView.delegate = self;
     [self.scrollView setScrollEnabled:YES];

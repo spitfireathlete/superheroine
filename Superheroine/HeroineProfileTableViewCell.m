@@ -57,7 +57,7 @@
         
         UIGraphicsEndImageContext();
         
-        [self postImage:finalImage withStatus:[NSString stringWithFormat:@"Who is your inspiration? Mine is %@. http://bit.ly/1aJttjC #chimehack #vitalvoices", self.card.displayName]];
+        [self postImage:finalImage withStatus:[NSString stringWithFormat:@"Who is your inspiration? Mine is %@ %@. http://bit.ly/1aJttjC #vitalvoices #chimeforchange", self.card.displayName, self.card.twitterHandle]];
     } else {
         NSLog(@"nope");
     }

@@ -100,12 +100,12 @@
     [self.contentView addSubview:self.addPhotoButton];
     
     [self.contentView addSubview:self.saveButton];
-    
-    
+
     self.scrollView.delegate = self;
     [self.scrollView setScrollEnabled:YES];
 
     [self.scrollView setContentSize:CGSizeMake(320, 930)];
+    [self.scrollView setContentInset:UIEdgeInsetsMake(0, 0, 220, 0)];
     [self.scrollView addSubview:self.contentView];
     
     [self.view addSubview:self.scrollView];

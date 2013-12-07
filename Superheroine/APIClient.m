@@ -7,6 +7,9 @@
 //
 
 #import "APIClient.h"
+#import "AFURLResponseSerialization.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "CredentialStore.h"
 
 @implementation APIClient
 
@@ -25,6 +28,41 @@ static NSString * const BASE_URL = @"http://localhost:3000/";
     });
     
     return _sharedClient;
+}
+
+- (void) getAllCardsOnSuccess:(void (^)(AFHTTPRequestOperation *operation, id response))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
+    [manager GET:[NSString stringWithFormat:@"%@api/cards.json", BASE_URL] parameters:[self setAuthToken:nil] success:success failure:failure];
+    
+}
+
+- (void) getAllSuperheroinesOnSuccess:(void (^)(AFHTTPRequestOperation *operation, id response))success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
+    [manager GET:[NSString stringWithFormat:@"%@api/superheroines.json", BASE_URL] parameters:[self setAuthToken:nil] success:success failure:failure];
+    
+}
+
+- (void) favoriteCard:(Card *) card success:(void (^)(AFHTTPRequestOperation *operation, id response)) success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
+    [manager PUT:[NSString stringWithFormat:@"%@api/api/cards/%@/favorite", BASE_URL, card.objectId] parameters:[self setAuthToken:nil] success:success failure:failure];
+    
+}
+
+- (void) shareCard:(Card *) card success:(void (^)(AFHTTPRequestOperation *operation, id response)) success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
+    [manager PUT:[NSString stringWithFormat:@"%@api/api/cards/%@/share", BASE_URL, card.objectId] parameters:[self setAuthToken:nil] success:success failure:failure];
+    
+}
+
+- (NSDictionary *) setAuthToken: (NSDictionary *) params {
+    NSMutableDictionary *paramsWithAuth = [[NSMutableDictionary alloc] initWithDictionary: params];
+    CredentialStore *creds = [[CredentialStore alloc] init];
+    [paramsWithAuth setObject:[creds authToken] forKey:@"auth_token"];
+    return paramsWithAuth;
 }
 
 @end

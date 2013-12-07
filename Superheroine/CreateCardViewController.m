@@ -109,9 +109,21 @@
     [self.scrollView addSubview:self.contentView];
     
     [self.view addSubview:self.scrollView];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(setSelectedSuperheroine:) name:@"UserSelectedSuperheroine" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(deselectSuperheroine:) name:@"UserDeselectedSuperheroine" object:nil];
     
 }
+-(void) setSelectedSuperheroine:(NSNotification *) sentObject{
+    self.superheroine = (Superheroine *) [sentObject object] ;
+    NSLog(@"%@ selected",self.superheroine.displayName);
+}
 
+-(void) deselectSuperheroine:(NSNotification *) sentObject{
+    NSLog(@"%@ deselected",self.superheroine.displayName);
+    self.superheroine = nil;
+}
 - (BOOL) textFieldShouldBeginEditing:(UITextField *)textField {
     return YES;
 }

@@ -96,12 +96,16 @@
         // deselect cell
         cell.accessoryType = UITableViewCellAccessoryNone;
         self.selected = nil;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UserDeselectedSuperheroine"
+    object:nil];
     } else {
         // select new cell, deselected previous
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         selectedCell.accessoryType = UITableViewCellAccessoryNone;
         self.selectedIndex = indexPath;
         self.selected = [self.superheroines objectAtIndex:indexPath.row];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UserSelectedSuperheroine"
+                                                            object:self.selected];
     }
     
 }

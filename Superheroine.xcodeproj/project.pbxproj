@@ -32,6 +32,10 @@
 		EA16C61C1851D46E000E5B54 /* CardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C61B1851D46E000E5B54 /* CardsViewController.m */; };
 		EA16C61E185290ED000E5B54 /* star_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C61D185290ED000E5B54 /* star_icon.png */; };
 		EA16C6221852954F000E5B54 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C6211852954F000E5B54 /* menu_icon.png */; };
+		EA16C6241852965F000E5B54 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA16C6231852965F000E5B54 /* CardTableViewCell.xib */; };
+		EA16C6261852974E000E5B54 /* blue_brush_background.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C6251852974E000E5B54 /* blue_brush_background.png */; };
+		EA16C629185297B2000E5B54 /* CardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA16C628185297B2000E5B54 /* CardTableViewCell.m */; };
+		EA16C62B18529868000E5B54 /* SaraBlakely.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA16C62A18529868000E5B54 /* SaraBlakely.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,11 @@
 		EA16C61B1851D46E000E5B54 /* CardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardsViewController.m; path = ../CardsViewController.m; sourceTree = "<group>"; };
 		EA16C61D185290ED000E5B54 /* star_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_icon.png; sourceTree = "<group>"; };
 		EA16C6211852954F000E5B54 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
+		EA16C6231852965F000E5B54 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardTableViewCell.xib; path = ../CardTableViewCell.xib; sourceTree = "<group>"; };
+		EA16C6251852974E000E5B54 /* blue_brush_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_brush_background.png; sourceTree = "<group>"; };
+		EA16C627185297B2000E5B54 /* CardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardTableViewCell.h; path = ../CardTableViewCell.h; sourceTree = "<group>"; };
+		EA16C628185297B2000E5B54 /* CardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardTableViewCell.m; path = ../CardTableViewCell.m; sourceTree = "<group>"; };
+		EA16C62A18529868000E5B54 /* SaraBlakely.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SaraBlakely.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +193,8 @@
 		EA16C5F618513609000E5B54 /* Image Assets */ = {
 			isa = PBXGroup;
 			children = (
+				EA16C62A18529868000E5B54 /* SaraBlakely.jpg */,
+				EA16C6251852974E000E5B54 /* blue_brush_background.png */,
 				EA16C6211852954F000E5B54 /* menu_icon.png */,
 				EA16C5F718513615000E5B54 /* facebook_icon.png */,
 				EA16C5F818513615000E5B54 /* pinterest_icon.png */,
@@ -208,6 +219,9 @@
 				EA16C60E185169B7000E5B54 /* SuperheroineViewController.m */,
 				EA16C613185169E5000E5B54 /* DashboardViewController.h */,
 				EA16C614185169E5000E5B54 /* DashboardViewController.m */,
+				EA16C627185297B2000E5B54 /* CardTableViewCell.h */,
+				EA16C628185297B2000E5B54 /* CardTableViewCell.m */,
+				EA16C6231852965F000E5B54 /* CardTableViewCell.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -297,14 +311,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA16C6261852974E000E5B54 /* blue_brush_background.png in Resources */,
 				EA16C5FC18513615000E5B54 /* twitter_icon.png in Resources */,
 				EA16C5DA18512ED3000E5B54 /* Images.xcassets in Resources */,
 				EA16C61E185290ED000E5B54 /* star_icon.png in Resources */,
+				EA16C62B18529868000E5B54 /* SaraBlakely.jpg in Resources */,
 				EA16C5CC18512ED3000E5B54 /* InfoPlist.strings in Resources */,
 				EA16C5FA18513615000E5B54 /* facebook_icon.png in Resources */,
 				EA16C6221852954F000E5B54 /* menu_icon.png in Resources */,
 				EA16C5FB18513615000E5B54 /* pinterest_icon.png in Resources */,
 				EA16C5D518512ED3000E5B54 /* Main.storyboard in Resources */,
+				EA16C6241852965F000E5B54 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +343,7 @@
 				EA16C612185169D6000E5B54 /* MainNavigationViewController.m in Sources */,
 				EA16C61C1851D46E000E5B54 /* CardsViewController.m in Sources */,
 				EA16C5D218512ED3000E5B54 /* AppDelegate.m in Sources */,
+				EA16C629185297B2000E5B54 /* CardTableViewCell.m in Sources */,
 				EA16C615185169E5000E5B54 /* DashboardViewController.m in Sources */,
 				EA16C60C185169B0000E5B54 /* HeroineViewController.m in Sources */,
 				EA16C609185169A0000E5B54 /* CreateCardViewController.m in Sources */,

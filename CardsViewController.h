@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CardsViewController : UIViewController
+@interface CardsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

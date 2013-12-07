@@ -1,14 +1,14 @@
 //
-//  HeroineProfileTableViewCell.m
+//  ComicBookSquareTableViewCell.m
 //  Superheroine
 //
 //  Created by Erin Parker on 12/6/13.
 //  Copyright (c) 2013 Erin Parker. All rights reserved.
 //
 
-#import "HeroineProfileTableViewCell.h"
+#import "ComicBookSquareTableViewCell.h"
 
-@implementation HeroineProfileTableViewCell
+@implementation ComicBookSquareTableViewCell
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
@@ -20,12 +20,5 @@
     
     return self;
 }
-- (IBAction)tweet:(id)sender {
-}
 
-- (IBAction)favorite:(id)sender {
-}
-
-- (IBAction)watchVideo:(id)sender {
-}
 @end

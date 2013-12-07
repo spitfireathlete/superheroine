@@ -44,6 +44,10 @@
 		EA16C62F18529E7C000E5B54 /* video_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C62E18529E7C000E5B54 /* video_icon.png */; };
 		EA5103151852A8AB0072EEAE /* HeroineProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5103141852A8AB0072EEAE /* HeroineProfileTableViewCell.xib */; };
 		EA5103181852A8B70072EEAE /* HeroineProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5103171852A8B70072EEAE /* HeroineProfileTableViewCell.m */; };
+		EA51031A1852AC8C0072EEAE /* halftone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103191852AC8C0072EEAE /* halftone.png */; };
+		EA51031C1852ACCC0072EEAE /* paper_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51031B1852ACCC0072EEAE /* paper_pattern.png */; };
+		EA51031E1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA51031D1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib */; };
+		EA5103211852AD260072EEAE /* ComicBookSquareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5103201852AD260072EEAE /* ComicBookSquareTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,11 @@
 		EA5103141852A8AB0072EEAE /* HeroineProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroineProfileTableViewCell.xib; sourceTree = "<group>"; };
 		EA5103161852A8B70072EEAE /* HeroineProfileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroineProfileTableViewCell.h; sourceTree = "<group>"; };
 		EA5103171852A8B70072EEAE /* HeroineProfileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroineProfileTableViewCell.m; sourceTree = "<group>"; };
+		EA5103191852AC8C0072EEAE /* halftone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halftone.png; sourceTree = "<group>"; };
+		EA51031B1852ACCC0072EEAE /* paper_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper_pattern.png; sourceTree = "<group>"; };
+		EA51031D1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicBookSquareTableViewCell.xib; sourceTree = "<group>"; };
+		EA51031F1852AD260072EEAE /* ComicBookSquareTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicBookSquareTableViewCell.h; sourceTree = "<group>"; };
+		EA5103201852AD260072EEAE /* ComicBookSquareTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicBookSquareTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +232,8 @@
 		EA16C5F618513609000E5B54 /* Image Assets */ = {
 			isa = PBXGroup;
 			children = (
+				EA51031B1852ACCC0072EEAE /* paper_pattern.png */,
+				EA5103191852AC8C0072EEAE /* halftone.png */,
 				EA16C62E18529E7C000E5B54 /* video_icon.png */,
 				EA16C62A18529868000E5B54 /* SaraBlakely.jpg */,
 				EA16C62C18529D59000E5B54 /* Supergirl.png */,
@@ -257,6 +268,9 @@
 				EA5103161852A8B70072EEAE /* HeroineProfileTableViewCell.h */,
 				EA5103171852A8B70072EEAE /* HeroineProfileTableViewCell.m */,
 				EA5103141852A8AB0072EEAE /* HeroineProfileTableViewCell.xib */,
+				EA51031F1852AD260072EEAE /* ComicBookSquareTableViewCell.h */,
+				EA5103201852AD260072EEAE /* ComicBookSquareTableViewCell.m */,
+				EA51031D1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -357,10 +371,13 @@
 				EA16C62B18529868000E5B54 /* SaraBlakely.jpg in Resources */,
 				EA16C5CC18512ED3000E5B54 /* InfoPlist.strings in Resources */,
 				EA16C5FA18513615000E5B54 /* facebook_icon.png in Resources */,
+				EA51031E1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib in Resources */,
+				EA51031C1852ACCC0072EEAE /* paper_pattern.png in Resources */,
 				EA16C6221852954F000E5B54 /* menu_icon.png in Resources */,
 				EA16C5FB18513615000E5B54 /* pinterest_icon.png in Resources */,
 				EA16C62D18529D59000E5B54 /* Supergirl.png in Resources */,
 				EA16C5D518512ED3000E5B54 /* Main.storyboard in Resources */,
+				EA51031A1852AC8C0072EEAE /* halftone.png in Resources */,
 				EA16C6241852965F000E5B54 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				021B0F2E1852A49C0026FAF5 /* CredentialStore.m in Sources */,
+				EA5103211852AD260072EEAE /* ComicBookSquareTableViewCell.m in Sources */,
 				021B0F2B1852A3060026FAF5 /* RestObject.m in Sources */,
 				EA16C612185169D6000E5B54 /* MainNavigationViewController.m in Sources */,
 				EA16C61C1851D46E000E5B54 /* CardsViewController.m in Sources */,

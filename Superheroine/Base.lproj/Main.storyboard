@@ -25,7 +25,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="k35-Wb-pmV" kind="push" identifier="showSuperheroine" id="EVo-gq-tyn"/>
+                                            <segue destination="k35-Wb-pmV" kind="modal" identifier="showSuperheroine" modalTransitionStyle="flipHorizontal" id="6gh-IA-ng8"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comiccell" rowHeight="112" id="RXn-2j-B8z" customClass="ComicBookSquareTableViewCell">
@@ -65,7 +65,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="profilecell" rowHeight="119" id="myR-cU-coB" customClass="HeroineProfileTableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="119"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myR-cU-coB" id="eTo-g7-TKM">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
@@ -73,7 +73,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comiccell" rowHeight="83" id="oiM-nJ-QcF" customClass="ComicBookSquareTableViewCell">
-                                <rect key="frame" x="0.0" y="205" width="320" height="83"/>
+                                <rect key="frame" x="0.0" y="141" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oiM-nJ-QcF" id="SKJ-d7-fGu">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
@@ -90,7 +90,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bX-oo-VQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2310" y="697"/>
+            <point key="canvasLocation" x="2278" y="697"/>
         </scene>
         <!--Create Card View Controller-->
         <scene sceneID="MVu-8X-27V">
@@ -445,7 +445,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lT5-0I-0wz"/>
         <segue reference="NgZ-Xz-xWc"/>
+        <segue reference="lT5-0I-0wz"/>
     </inferredMetricsTieBreakers>
 </document>

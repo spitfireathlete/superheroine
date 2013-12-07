@@ -8,5 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class Card;
+
+@protocol CardCreationDelegate <NSObject>
+- (void) cardCreationViewControllerDismissed: (Card *)card;
+@end
+
 @interface CreateCardViewController : UIViewController <UIScrollViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+{
+    __unsafe_unretained id myDelegate;
+}
+
+@property (nonatomic, assign) id <CardCreationDelegate> myDelegate;
+
 @end

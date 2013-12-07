@@ -55,6 +55,7 @@
 @end
 
 @implementation CreateCardViewController
+@synthesize myDelegate;
 
 - (void)viewDidLoad
 {
@@ -186,6 +187,7 @@
     
     [[APIClient sharedClient] createCard:(Card *)self.card withImage:imageAsbase64String withAlterEgo:self.superheroine success:^(AFHTTPRequestOperation *operation, id response) {
         NSLog(@"%@", response);
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", error);
     }];

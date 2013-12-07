@@ -10,7 +10,7 @@
 #import "Superheroine.h"
 #import "Superpower.h"
 
-@interface SuperHeroineViewController : UITableViewController
+@interface SuperHeroineViewController : UITableViewController 
 @property (strong, nonatomic) Superheroine *superheroine;
 @property (strong, nonatomic) Superpower *superpower;
 @end

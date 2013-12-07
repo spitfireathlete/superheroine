@@ -12,6 +12,9 @@
 
 @interface SuperheroineListViewController ()
 
+@property (strong, nonatomic) NSIndexPath *selectedIndex;
+
+
 @end
 
 @implementation SuperheroineListViewController
@@ -79,6 +82,30 @@
     cell.imageView.image = [UIImage imageNamed:@"Supergirl.png"];
     return cell;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
+    
+
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:self.selectedIndex];
+    
+    if ([indexPath isEqual:self.selectedIndex]) {
+        // deselect cell
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        self.selected = nil;
+    } else {
+        // select new cell, deselected previous
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        selectedCell.accessoryType = UITableViewCellAccessoryNone;
+        self.selectedIndex = indexPath;
+        self.selected = [self.superheroines objectAtIndex:indexPath.row];
+    }
+    
+}
+
 
 /*
 // Override to support conditional editing of the table view.

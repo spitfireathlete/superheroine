@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Superheroine.h"
 
 @interface SuperheroineListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSArray *superheroines;
+@property (strong, nonatomic) Superheroine *selected;
 
 @end

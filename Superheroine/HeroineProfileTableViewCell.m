@@ -10,6 +10,8 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 #import "User.h"
+#import "APIClient.h"
+
 @interface HeroineProfileTableViewCell()
 
 @property (nonatomic) ACAccountStore *accountStore;
@@ -58,10 +60,18 @@
 }
 
 - (IBAction)favorite:(id)sender {
+    
+    [[APIClient sharedClient] favoriteCard:self.card success:^(AFHTTPRequestOperation *operation, id response) {
+        NSLog(@"%@", response);
+        self.numInspired.text = [NSString stringWithFormat:@"%d", [self.card.numFaves intValue] + 1];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error recording favorite");
+    }];
 }
 
 - (IBAction)watchVideo:(id)sender {
-    NSLog(@"I was clicked: %@", self.card.videoLink);
+    NSLog(@"video clicked: %@", self.card.videoLink);
     
     if (self.card.videoLink) {
         [[UIApplication sharedApplication] openURL:self.card.videoLink];
@@ -87,9 +97,19 @@
                                                 options:NSJSONReadingMutableContainers
                                                   error:NULL];
                 NSLog(@"[SUCCESS!] Created Tweet with ID: %@", postResponseData[@"id_str"]);
+                
+                
+                [[APIClient sharedClient] shareCard:self.card success:^(AFHTTPRequestOperation *operation, id response) {
+                    NSLog(@"%@", response);
+                    
+                } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                    NSLog(@"Error recording share");
+                }];
+
+                
             }
             else {
-                NSLog(@"[ERROR] Server responded: status code %lu %@", statusCode,
+                NSLog(@"[ERROR] Server responded: status code %u %@", statusCode,
                       [NSHTTPURLResponse localizedStringForStatusCode:statusCode]);
             }
         }

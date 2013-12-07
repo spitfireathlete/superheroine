@@ -10,7 +10,8 @@
 
 @interface Superpower : RestObject
 
-@property (nonatomic, strong) NSString *objectId;
+
+
 
 + (NSMutableArray *)superpowersFromArray:(NSArray *)array;
 

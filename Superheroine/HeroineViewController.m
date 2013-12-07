@@ -9,6 +9,7 @@
 #import "HeroineViewController.h"
 #import "HeroineProfileTableViewCell.h"
 #import "ComicBookSquareTableViewCell.h"
+#import "SuperHeroineViewController.h"
 #import "Card.h"
 
 @interface HeroineViewController ()
@@ -81,6 +82,12 @@
 
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self performSegueWithIdentifier:@"showSuperheroine" sender:nil];
+}
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSIndexPath *firstRow = [NSIndexPath indexPathForRow:0 inSection:0];
@@ -90,6 +97,14 @@
     
     return 175;
 
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"showSuperheroine"]){
+        SuperHeroineViewController *vc = [segue destinationViewController];
+        vc.superheroine = self.selectedCard.alterEgo;
+    }
 }
 
 @end

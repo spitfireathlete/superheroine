@@ -16,6 +16,8 @@
 		021B0F3C1852A99A0026FAF5 /* Superpower.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F3B1852A99A0026FAF5 /* Superpower.m */; };
 		022BD9831853437B00ADFD90 /* SuperheroineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 022BD9821853437B00ADFD90 /* SuperheroineListViewController.m */; };
 		02D066DF185301C4003D07E2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D066DE185301C4003D07E2 /* Social.framework */; };
+		02D8863C1853C2FC0083AF8F /* WonderWoman.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D8863B1853C2FC0083AF8F /* WonderWoman.png */; };
+		02D8863E1853C3540083AF8F /* JeanGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D8863D1853C3540083AF8F /* JeanGrey.png */; };
 		9A2A9673C95B4EA2AEFE87A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24847E9FD99444BCB629A811 /* libPods.a */; };
 		EA16C5C218512ED3000E5B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C118512ED3000E5B54 /* Foundation.framework */; };
 		EA16C5C418512ED3000E5B54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C318512ED3000E5B54 /* CoreGraphics.framework */; };
@@ -84,6 +86,8 @@
 		022BD9811853437B00ADFD90 /* SuperheroineListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperheroineListViewController.h; sourceTree = "<group>"; };
 		022BD9821853437B00ADFD90 /* SuperheroineListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperheroineListViewController.m; sourceTree = "<group>"; };
 		02D066DE185301C4003D07E2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		02D8863B1853C2FC0083AF8F /* WonderWoman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WonderWoman.png; sourceTree = "<group>"; };
+		02D8863D1853C3540083AF8F /* JeanGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JeanGrey.png; sourceTree = "<group>"; };
 		09971B6D9A1E4581B1CC7BBC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		24847E9FD99444BCB629A811 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA16C5BE18512ED3000E5B54 /* Superheroine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +271,8 @@
 		EA16C5F618513609000E5B54 /* Image Assets */ = {
 			isa = PBXGroup;
 			children = (
+				02D8863D1853C3540083AF8F /* JeanGrey.png */,
+				02D8863B1853C2FC0083AF8F /* WonderWoman.png */,
 				EA51031B1852ACCC0072EEAE /* paper_pattern.png */,
 				EA5103191852AC8C0072EEAE /* halftone.png */,
 				EA16C62E18529E7C000E5B54 /* video_icon.png */,
@@ -400,9 +406,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA16C62F18529E7C000E5B54 /* video_icon.png in Resources */,
+				02D8863C1853C2FC0083AF8F /* WonderWoman.png in Resources */,
 				EA16C6261852974E000E5B54 /* blue_brush_background.png in Resources */,
 				EA16C5FC18513615000E5B54 /* twitter_icon.png in Resources */,
 				EA16C5DA18512ED3000E5B54 /* Images.xcassets in Resources */,
+				02D8863E1853C3540083AF8F /* JeanGrey.png in Resources */,
 				EA5103151852A8AB0072EEAE /* HeroineProfileTableViewCell.xib in Resources */,
 				EA16C61E185290ED000E5B54 /* star_icon.png in Resources */,
 				EA16C62B18529868000E5B54 /* SaraBlakely.jpg in Resources */,

@@ -52,6 +52,7 @@
         headerCell.fullName.text = self.superheroine.displayName;
         headerCell.title.text = @"";
         headerCell.twitterHandle.text = @"";
+        headerCell.heroinePhoto.image = self.superheroine.superheroineImage;
         return headerCell;
     }
     

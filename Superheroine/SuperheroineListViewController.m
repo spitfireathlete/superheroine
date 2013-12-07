@@ -79,7 +79,7 @@
     
     Superheroine *superheroine = [self.superheroines objectAtIndex:indexPath.row];
     cell.textLabel.text = superheroine.displayName;
-    cell.imageView.image = [UIImage imageNamed:@"Supergirl.png"];
+    cell.imageView.image = superheroine.superheroineImage;
     return cell;
 }
 

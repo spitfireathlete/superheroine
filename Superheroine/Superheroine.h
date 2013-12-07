@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSString *displayName;
 
 @property (nonatomic, strong) NSArray *superpowers;
-
+@property (nonatomic, strong) UIImage *superheroineImage;
 
 + (NSMutableArray *)superheroinesFromArray:(NSArray *)array;
 

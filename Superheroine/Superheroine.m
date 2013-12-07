@@ -19,6 +19,7 @@
         self.name = [self valueOrNilForKeyPath:@"name"];
         self.displayName = [self valueOrNilForKeyPath:@"display_name"];
         self.bio = [self valueOrNilForKeyPath:@"bio"];
+        self.superheroineImage = [UIImage imageNamed: [self valueOrNilForKeyPath:@"image"]];
     }
     return self;
 }

@@ -38,7 +38,20 @@
 
     if ([User userHasAccessToTwitter]) {
         NSLog(@"tweeet");
-        [self postImage:[UIImage imageNamed:@"Supergirl.png"]  withStatus:@"test post using ios sdk"];
+        UIImage *image1 = [UIImage imageNamed:@"Supergirl.png"];
+        UIImage *image2 = [UIImage imageNamed:@"SaraBlakely.jpg"];
+        
+        CGSize size = CGSizeMake(image1.size.width, image1.size.height + image2.size.height);
+        
+        UIGraphicsBeginImageContext(size);
+        [image1 drawInRect:CGRectMake(0,0,size.width, image1.size.height)];
+        [image2 drawInRect:CGRectMake(0,image1.size.height,size.width, image2.size.height)];
+        
+        UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIGraphicsEndImageContext();
+        
+        [self postImage:finalImage  withStatus:@"testing image stitching"];
     } else {
         NSLog(@"nope");
     }

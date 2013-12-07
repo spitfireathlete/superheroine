@@ -27,7 +27,7 @@
         self.videos = [self valueOrNilForKeyPath:@"heroine_videos"];
         self.twitterHandle = [self valueOrNilForKeyPath:@"twitter_handle"];
         if (self.videos.count > 0) {
-            self.videoLink = [NSURL URLWithString:[[self.videos objectAtIndex:0] valueOrNilForKeyPath:@"video_link"]];
+            self.videoLink = [NSURL URLWithString:[[self.videos objectAtIndex:0] objectForKey:@"video_link"]];
         } else {
             self.videoLink = [NSURL URLWithString:@"http://www.youtube.com/watch?v=xyKXBxK82LE"];
         }

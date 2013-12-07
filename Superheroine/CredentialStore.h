@@ -1,5 +1,5 @@
 //
-//  APIClient.h
+//  CredentialStore.h
 //  Superheroine
 //
 //  Created by Nidhi Kulkarni on 12/6/13.
@@ -7,12 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFHTTPRequestOperation.h"
-#import "AFHTTPSessionManager.h"
 
+@interface CredentialStore : NSObject
 
-@interface APIClient : AFHTTPSessionManager
-
-+ (APIClient *)sharedClient;
+@property (nonatomic, strong) NSString *authToken;
 
 @end

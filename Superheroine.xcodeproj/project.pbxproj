@@ -10,6 +10,10 @@
 		021B0F281852A2E80026FAF5 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F271852A2E80026FAF5 /* APIClient.m */; };
 		021B0F2B1852A3060026FAF5 /* RestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F2A1852A3060026FAF5 /* RestObject.m */; };
 		021B0F2E1852A49C0026FAF5 /* CredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F2D1852A49C0026FAF5 /* CredentialStore.m */; };
+		021B0F321852A5440026FAF5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F311852A5440026FAF5 /* Card.m */; };
+		021B0F351852A5530026FAF5 /* Superheroine.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F341852A5530026FAF5 /* Superheroine.m */; };
+		021B0F391852A8FD0026FAF5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F381852A8FD0026FAF5 /* User.m */; };
+		021B0F3C1852A99A0026FAF5 /* Superpower.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F3B1852A99A0026FAF5 /* Superpower.m */; };
 		9A2A9673C95B4EA2AEFE87A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24847E9FD99444BCB629A811 /* libPods.a */; };
 		EA16C5C218512ED3000E5B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C118512ED3000E5B54 /* Foundation.framework */; };
 		EA16C5C418512ED3000E5B54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C318512ED3000E5B54 /* CoreGraphics.framework */; };
@@ -66,6 +70,14 @@
 		021B0F2A1852A3060026FAF5 /* RestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestObject.m; sourceTree = "<group>"; };
 		021B0F2C1852A49C0026FAF5 /* CredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialStore.h; sourceTree = "<group>"; };
 		021B0F2D1852A49C0026FAF5 /* CredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CredentialStore.m; sourceTree = "<group>"; };
+		021B0F301852A5440026FAF5 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		021B0F311852A5440026FAF5 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		021B0F331852A5530026FAF5 /* Superheroine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superheroine.h; sourceTree = "<group>"; };
+		021B0F341852A5530026FAF5 /* Superheroine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Superheroine.m; sourceTree = "<group>"; };
+		021B0F371852A8FD0026FAF5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		021B0F381852A8FD0026FAF5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		021B0F3A1852A99A0026FAF5 /* Superpower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superpower.h; sourceTree = "<group>"; };
+		021B0F3B1852A99A0026FAF5 /* Superpower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Superpower.m; sourceTree = "<group>"; };
 		09971B6D9A1E4581B1CC7BBC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		24847E9FD99444BCB629A811 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA16C5BE18512ED3000E5B54 /* Superheroine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +156,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021B0F2F1852A5250026FAF5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				021B0F261852A2E80026FAF5 /* APIClient.h */,
+				021B0F271852A2E80026FAF5 /* APIClient.m */,
+				021B0F291852A3060026FAF5 /* RestObject.h */,
+				021B0F2A1852A3060026FAF5 /* RestObject.m */,
+				021B0F301852A5440026FAF5 /* Card.h */,
+				021B0F311852A5440026FAF5 /* Card.m */,
+				021B0F331852A5530026FAF5 /* Superheroine.h */,
+				021B0F341852A5530026FAF5 /* Superheroine.m */,
+				021B0F3A1852A99A0026FAF5 /* Superpower.h */,
+				021B0F3B1852A99A0026FAF5 /* Superpower.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		EA16C5B518512ED2000E5B54 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +208,7 @@
 		EA16C5C718512ED3000E5B54 /* Superheroine */ = {
 			isa = PBXGroup;
 			children = (
+				021B0F2F1852A5250026FAF5 /* API */,
 				EA16C5D018512ED3000E5B54 /* AppDelegate.h */,
 				EA16C5D118512ED3000E5B54 /* AppDelegate.m */,
 				EA16C5D318512ED3000E5B54 /* Main.storyboard */,
@@ -186,12 +216,10 @@
 				EA16C5D918512ED3000E5B54 /* Images.xcassets */,
 				EA16C5F618513609000E5B54 /* Image Assets */,
 				EA16C5C818512ED3000E5B54 /* Supporting Files */,
-				021B0F261852A2E80026FAF5 /* APIClient.h */,
-				021B0F271852A2E80026FAF5 /* APIClient.m */,
-				021B0F291852A3060026FAF5 /* RestObject.h */,
-				021B0F2A1852A3060026FAF5 /* RestObject.m */,
 				021B0F2C1852A49C0026FAF5 /* CredentialStore.h */,
 				021B0F2D1852A49C0026FAF5 /* CredentialStore.m */,
+				021B0F371852A8FD0026FAF5 /* User.h */,
+				021B0F381852A8FD0026FAF5 /* User.m */,
 			);
 			path = Superheroine;
 			sourceTree = "<group>";
@@ -425,16 +453,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021B0F391852A8FD0026FAF5 /* User.m in Sources */,
 				021B0F2E1852A49C0026FAF5 /* CredentialStore.m in Sources */,
 				EA5103211852AD260072EEAE /* ComicBookSquareTableViewCell.m in Sources */,
 				021B0F2B1852A3060026FAF5 /* RestObject.m in Sources */,
 				EA16C612185169D6000E5B54 /* MainNavigationViewController.m in Sources */,
 				EA16C61C1851D46E000E5B54 /* CardsViewController.m in Sources */,
 				EA16C5D218512ED3000E5B54 /* AppDelegate.m in Sources */,
+				021B0F321852A5440026FAF5 /* Card.m in Sources */,
 				EA16C629185297B2000E5B54 /* CardTableViewCell.m in Sources */,
 				EA16C615185169E5000E5B54 /* DashboardViewController.m in Sources */,
 				EA5103181852A8B70072EEAE /* HeroineProfileTableViewCell.m in Sources */,
+				021B0F351852A5530026FAF5 /* Superheroine.m in Sources */,
 				021B0F281852A2E80026FAF5 /* APIClient.m in Sources */,
+				021B0F3C1852A99A0026FAF5 /* Superpower.m in Sources */,
 				EA16C60C185169B0000E5B54 /* HeroineViewController.m in Sources */,
 				EA16C609185169A0000E5B54 /* CreateCardViewController.m in Sources */,
 				EA16C61818516A8E000E5B54 /* SWRevealViewController.m in Sources */,

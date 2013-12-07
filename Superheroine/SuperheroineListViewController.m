@@ -7,6 +7,8 @@
 //
 
 #import "SuperheroineListViewController.h"
+#import "Superheroine.h"
+#import "APIClient.h"
 
 @interface SuperheroineListViewController ()
 
@@ -29,6 +31,15 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    [[APIClient sharedClient] getAllSuperheroinesOnSuccess:^(AFHTTPRequestOperation *operation, id response) {
+        NSLog(@"%@", response);
+        self.superheroines = [Superheroine superheroinesFromArray:response];
+        
+        [self.tableView reloadData];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error retrieving all superheroines from the API");
+    }];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -56,15 +67,16 @@
 {
 
     // Return the number of rows in the section.
-    return 5;
+    return [self.superheroines count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SuperheroineCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = @"hi";
-    
+    Superheroine *superheroine = [self.superheroines objectAtIndex:indexPath.row];
+    cell.textLabel.text = superheroine.displayName;
+    cell.imageView.image = [UIImage imageNamed:@"Supergirl.png"];
     return cell;
 }
 

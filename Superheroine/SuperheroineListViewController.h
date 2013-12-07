@@ -10,4 +10,6 @@
 
 @interface SuperheroineListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (strong, nonatomic) NSArray *superheroines;
+
 @end

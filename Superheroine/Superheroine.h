@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *objectId;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *bio;
+@property (nonatomic, strong) NSString *displayName;
 
 @property (nonatomic, strong) NSArray *superpowers;
 

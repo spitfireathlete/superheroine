@@ -84,9 +84,10 @@
 
     comicCell.sectionTitle.text = @"SUPERPOWERS";
     NSLog(@"%@", [[self.superheroine.superpowers objectAtIndex:0] objectForKey:@"name"]);
+        NSLog(@"%@", [[self.superheroine.superpowers objectAtIndex:0] objectForKey:@"description"]);
 
 
-    comicCell.sectionText.text = [NSString stringWithFormat:@"%@: %@",[[self.superheroine.superpowers objectAtIndex:0] objectForKey:@"name"], [[self.superheroine.superpowers objectAtIndex:1] objectForKey:@"description"]];
+    comicCell.sectionText.text = [NSString stringWithFormat:@"%@: %@",[[self.superheroine.superpowers objectAtIndex:0] objectForKey:@"name"], [[self.superheroine.superpowers objectAtIndex:0] objectForKey:@"description"]];
     return comicCell;
 }
 

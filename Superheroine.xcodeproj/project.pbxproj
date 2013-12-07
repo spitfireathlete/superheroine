@@ -64,6 +64,7 @@
 		EA5103351853E5350072EEAE /* firestarDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51032E1853E5350072EEAE /* firestarDone.png */; };
 		EA5103361853E5350072EEAE /* huntressDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51032F1853E5350072EEAE /* huntressDone.png */; };
 		EA5103381853E5350072EEAE /* mistyDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103311853E5350072EEAE /* mistyDone.png */; };
+		EA51033A1853E7100072EEAE /* stormDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103391853E7100072EEAE /* stormDone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		EA51032E1853E5350072EEAE /* firestarDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firestarDone.png; sourceTree = "<group>"; };
 		EA51032F1853E5350072EEAE /* huntressDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huntressDone.png; sourceTree = "<group>"; };
 		EA5103311853E5350072EEAE /* mistyDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mistyDone.png; sourceTree = "<group>"; };
+		EA5103391853E7100072EEAE /* stormDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stormDone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 		EA16C5F618513609000E5B54 /* Image Assets */ = {
 			isa = PBXGroup;
 			children = (
+				EA5103391853E7100072EEAE /* stormDone.png */,
 				EA51032B1853E5350072EEAE /* cheetarahDone.png */,
 				EA51032C1853E5350072EEAE /* chunLiDone.png */,
 				EA51032D1853E5350072EEAE /* doraDone.png */,
@@ -452,6 +455,7 @@
 				EA16C62D18529D59000E5B54 /* Supergirl.png in Resources */,
 				EA5103321853E5350072EEAE /* cheetarahDone.png in Resources */,
 				EA16C5D518512ED3000E5B54 /* Main.storyboard in Resources */,
+				EA51033A1853E7100072EEAE /* stormDone.png in Resources */,
 				EA51031A1852AC8C0072EEAE /* halftone.png in Resources */,
 				EA5103281853D4260072EEAE /* blue_twitter_icon.png in Resources */,
 				EA16C6241852965F000E5B54 /* CardTableViewCell.xib in Resources */,

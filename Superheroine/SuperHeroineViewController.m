@@ -48,9 +48,11 @@
     NSIndexPath *firstRow = [NSIndexPath indexPathForRow:0 inSection:0];
     if ([indexPath isEqual:firstRow]) {
         HeroineProfileTableViewCell *headerCell = (HeroineProfileTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"profilecell"];
+        NSArray *components = [self.superheroine.displayName componentsSeparatedByString:@"\""];
         
-        headerCell.fullName.text = self.superheroine.displayName;
-        headerCell.title.text = @"";
+        headerCell.fullName.text = components[0];
+        headerCell.title.text = components[1];
+        
         headerCell.twitterHandle.text = @"";
         headerCell.heroinePhoto.image = self.superheroine.superheroineImage;
         return headerCell;

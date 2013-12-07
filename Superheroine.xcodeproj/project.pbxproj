@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021B0F281852A2E80026FAF5 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F271852A2E80026FAF5 /* APIClient.m */; };
+		021B0F2B1852A3060026FAF5 /* RestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F2A1852A3060026FAF5 /* RestObject.m */; };
+		021B0F2E1852A49C0026FAF5 /* CredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F2D1852A49C0026FAF5 /* CredentialStore.m */; };
+		9A2A9673C95B4EA2AEFE87A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24847E9FD99444BCB629A811 /* libPods.a */; };
 		EA16C5C218512ED3000E5B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C118512ED3000E5B54 /* Foundation.framework */; };
 		EA16C5C418512ED3000E5B54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C318512ED3000E5B54 /* CoreGraphics.framework */; };
 		EA16C5C618512ED3000E5B54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C518512ED3000E5B54 /* UIKit.framework */; };
@@ -53,6 +57,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021B0F261852A2E80026FAF5 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		021B0F271852A2E80026FAF5 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		021B0F291852A3060026FAF5 /* RestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestObject.h; sourceTree = "<group>"; };
+		021B0F2A1852A3060026FAF5 /* RestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestObject.m; sourceTree = "<group>"; };
+		021B0F2C1852A49C0026FAF5 /* CredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialStore.h; sourceTree = "<group>"; };
+		021B0F2D1852A49C0026FAF5 /* CredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CredentialStore.m; sourceTree = "<group>"; };
+		09971B6D9A1E4581B1CC7BBC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		24847E9FD99444BCB629A811 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA16C5BE18512ED3000E5B54 /* Superheroine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA16C5C118512ED3000E5B54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA16C5C318512ED3000E5B54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +121,7 @@
 				EA16C5C418512ED3000E5B54 /* CoreGraphics.framework in Frameworks */,
 				EA16C5C618512ED3000E5B54 /* UIKit.framework in Frameworks */,
 				EA16C5C218512ED3000E5B54 /* Foundation.framework in Frameworks */,
+				9A2A9673C95B4EA2AEFE87A6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +145,7 @@
 				EA16C5E618512ED3000E5B54 /* SuperheroineTests */,
 				EA16C5C018512ED3000E5B54 /* Frameworks */,
 				EA16C5BF18512ED3000E5B54 /* Products */,
+				09971B6D9A1E4581B1CC7BBC /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +165,7 @@
 				EA16C5C318512ED3000E5B54 /* CoreGraphics.framework */,
 				EA16C5C518512ED3000E5B54 /* UIKit.framework */,
 				EA16C5E018512ED3000E5B54 /* XCTest.framework */,
+				24847E9FD99444BCB629A811 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +180,12 @@
 				EA16C5D918512ED3000E5B54 /* Images.xcassets */,
 				EA16C5F618513609000E5B54 /* Image Assets */,
 				EA16C5C818512ED3000E5B54 /* Supporting Files */,
+				021B0F261852A2E80026FAF5 /* APIClient.h */,
+				021B0F271852A2E80026FAF5 /* APIClient.m */,
+				021B0F291852A3060026FAF5 /* RestObject.h */,
+				021B0F2A1852A3060026FAF5 /* RestObject.m */,
+				021B0F2C1852A49C0026FAF5 /* CredentialStore.h */,
+				021B0F2D1852A49C0026FAF5 /* CredentialStore.m */,
 			);
 			path = Superheroine;
 			sourceTree = "<group>";
@@ -256,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA16C5F018512ED3000E5B54 /* Build configuration list for PBXNativeTarget "Superheroine" */;
 			buildPhases = (
+				089B9EC41DFD4B79A815A67E /* Check Pods Manifest.lock */,
 				EA16C5BA18512ED3000E5B54 /* Sources */,
 				EA16C5BB18512ED3000E5B54 /* Frameworks */,
 				EA16C5BC18512ED3000E5B54 /* Resources */,
+				AEB425AF655A4AF7A4D25685 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,17 +375,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		089B9EC41DFD4B79A815A67E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB425AF655A4AF7A4D25685 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA16C5BA18512ED3000E5B54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021B0F2E1852A49C0026FAF5 /* CredentialStore.m in Sources */,
+				021B0F2B1852A3060026FAF5 /* RestObject.m in Sources */,
 				EA16C612185169D6000E5B54 /* MainNavigationViewController.m in Sources */,
 				EA16C61C1851D46E000E5B54 /* CardsViewController.m in Sources */,
 				EA16C5D218512ED3000E5B54 /* AppDelegate.m in Sources */,
 				EA16C629185297B2000E5B54 /* CardTableViewCell.m in Sources */,
 				EA16C615185169E5000E5B54 /* DashboardViewController.m in Sources */,
 				EA5103181852A8B70072EEAE /* HeroineProfileTableViewCell.m in Sources */,
+				021B0F281852A2E80026FAF5 /* APIClient.m in Sources */,
 				EA16C60C185169B0000E5B54 /* HeroineViewController.m in Sources */,
 				EA16C609185169A0000E5B54 /* CreateCardViewController.m in Sources */,
 				EA16C61818516A8E000E5B54 /* SWRevealViewController.m in Sources */,
@@ -491,6 +550,7 @@
 		};
 		EA16C5F118512ED3000E5B54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09971B6D9A1E4581B1CC7BBC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -504,6 +564,7 @@
 		};
 		EA16C5F218512ED3000E5B54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09971B6D9A1E4581B1CC7BBC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -24,6 +24,14 @@
         self.quotes = [self valueOrNilForKeyPath:@"quotes"];
         self.numFaves = [self valueOrNilForKeyPath:@"num_favorites"];
         self.numShares = [self valueOrNilForKeyPath:@"num_shares"];
+        self.videos = [self valueOrNilForKeyPath:@"heroine_videos"];
+        self.twitterHandle = [self valueOrNilForKeyPath:@"twitter_handle"];
+        if (self.videos.count > 0) {
+            self.videoLink = [[self.videos objectAtIndex:0] valueOrNilForKeyPath:@"video_link"];
+        } else {
+            self.videoLink = @"www.spitfireathlete.com";
+        }
+
     }
     return self;
 }

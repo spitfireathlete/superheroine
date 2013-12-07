@@ -21,6 +21,9 @@
 @property (nonatomic, strong) NSString *quotes;
 @property (nonatomic, strong) NSString *numFaves;
 @property (nonatomic, strong) NSString *numShares;
+@property (nonatomic, strong) NSArray *videos;
+@property (nonatomic, strong) NSString *videoLink;
+@property (nonatomic, strong) NSString *twitterHandle;
 
 @property (nonatomic, strong) Superheroine *alterEgo;
 

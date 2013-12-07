@@ -25,7 +25,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comiccell" rowHeight="112" id="RXn-2j-B8z" customClass="ComicBookSquareTableViewCell">
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comiccell" rowHeight="112" id="RXn-2j-B8z" customClass="ComicBookSquareTableViewCell">
                                         <rect key="frame" x="0.0" y="266" width="320" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RXn-2j-B8z" id="PWg-qt-iH1">
@@ -396,6 +396,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="menu_icon.png" width="23" height="24"/>
         <image name="menu_icon.png" width="23" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

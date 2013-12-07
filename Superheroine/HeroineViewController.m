@@ -32,7 +32,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -41,24 +41,55 @@
     if ([indexPath isEqual:firstRow]) {
         HeroineProfileTableViewCell *headerCell = (HeroineProfileTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"profilecell"];
 
-        
         headerCell.fullName.text = self.selectedCard.name;
         headerCell.title.text = self.selectedCard.title;
-        headerCell.numInspired.text = @"999,999";
-        headerCell.twitterHandle.text = @"@neverbendeasy";
-        //        headerCell.numInspired.text = [NSString stringWithFormat:@"%@", self.selectedCard.numFaves];
-        
+        headerCell.twitterHandle.text = self.selectedCard.twitterHandle;
+        headerCell.numInspired.text = [NSString stringWithFormat:@"%@", self.selectedCard.numFaves];
         return headerCell;
     }
     
+    NSIndexPath *row2 = [NSIndexPath indexPathForRow:1 inSection:0];
+    if ([indexPath isEqual:row2]) {
+        ComicBookSquareTableViewCell *comicCell = (ComicBookSquareTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"comiccell"];
+        comicCell.sectionTitle.text = @"BIOGRAPHY";
+        comicCell.sectionText.text = self.selectedCard.bio;
+        return comicCell;
+        
+    }
+    
+    NSIndexPath *row3 = [NSIndexPath indexPathForRow:2 inSection:0];
+    if ([indexPath isEqual:row3]) {
+        ComicBookSquareTableViewCell *comicCell = (ComicBookSquareTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"comiccell"];
+        comicCell.sectionTitle.text = @"DID YOU KNOW?";
+        comicCell.sectionText.text = self.selectedCard.facts;
+        return comicCell;
+    }
+    
+    NSIndexPath *row4 = [NSIndexPath indexPathForRow:3 inSection:0];
+    if ([indexPath isEqual:row4]) {
+        ComicBookSquareTableViewCell *comicCell = (ComicBookSquareTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"comiccell"];
+        comicCell.sectionTitle.text = @"LIFE ADVICE FROM OUR HEROINE";
+        comicCell.sectionText.text = self.selectedCard.advice;
+        return comicCell;
+    }
+    
+
     ComicBookSquareTableViewCell *comicCell = (ComicBookSquareTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"comiccell"];
-    comicCell.sectionTitle.text = @"BIOGRAPHY";
+    comicCell.sectionTitle.text = @"HOW SHE ACHIEVED A TOUGH GOAL";
+    comicCell.sectionText.text = self.selectedCard.goals;
     return comicCell;
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200;
+    NSIndexPath *firstRow = [NSIndexPath indexPathForRow:0 inSection:0];
+    if ([indexPath isEqual:firstRow]) {
+        return 200;
+    }
+    
+    return 175;
+
 }
 
 @end

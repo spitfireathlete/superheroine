@@ -56,10 +56,8 @@
     
     cell.fullName.text = card.name;
     cell.title.text = card.title;
-    cell.numFavorites.text = @"123,456";
-    cell.numShares.text = @"234,345";
-//    cell.numFavorites.text = [NSString stringWithFormat:@"%@", card.numFaves];
-//    cell.numShares.text = [NSString stringWithFormat:@"%@", card.numShares];
+    cell.numFavorites.text = [NSString stringWithFormat:@"%@", card.numFaves];
+    cell.numShares.text = [NSString stringWithFormat:@"%@", card.numShares];
     return cell;
 }
 

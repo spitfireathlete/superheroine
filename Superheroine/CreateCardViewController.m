@@ -114,6 +114,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(deselectSuperheroine:) name:@"UserDeselectedSuperheroine" object:nil];
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(tapOutsideKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
 }
 -(void) setSelectedSuperheroine:(NSNotification *) sentObject{
     self.superheroine = (Superheroine *) [sentObject object] ;
@@ -201,4 +207,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)tapOutsideKeyboard
+{
+     [self.view endEditing:YES];
+}
 @end

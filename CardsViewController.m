@@ -46,13 +46,10 @@
     cell.numShares.text = @"123,234";
     return cell;
 }
-µ
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
-    
+   
     [self performSegueWithIdentifier:@"showheroine" sender:nil];
-    
     
 }
 

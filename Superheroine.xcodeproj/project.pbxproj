@@ -38,6 +38,8 @@
 		EA16C62B18529868000E5B54 /* SaraBlakely.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA16C62A18529868000E5B54 /* SaraBlakely.jpg */; };
 		EA16C62D18529D59000E5B54 /* Supergirl.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C62C18529D59000E5B54 /* Supergirl.png */; };
 		EA16C62F18529E7C000E5B54 /* video_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA16C62E18529E7C000E5B54 /* video_icon.png */; };
+		EA5103151852A8AB0072EEAE /* HeroineProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5103141852A8AB0072EEAE /* HeroineProfileTableViewCell.xib */; };
+		EA5103181852A8B70072EEAE /* HeroineProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5103171852A8B70072EEAE /* HeroineProfileTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,9 @@
 		EA16C62A18529868000E5B54 /* SaraBlakely.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SaraBlakely.jpg; sourceTree = "<group>"; };
 		EA16C62C18529D59000E5B54 /* Supergirl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Supergirl.png; sourceTree = "<group>"; };
 		EA16C62E18529E7C000E5B54 /* video_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_icon.png; sourceTree = "<group>"; };
+		EA5103141852A8AB0072EEAE /* HeroineProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroineProfileTableViewCell.xib; sourceTree = "<group>"; };
+		EA5103161852A8B70072EEAE /* HeroineProfileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroineProfileTableViewCell.h; sourceTree = "<group>"; };
+		EA5103171852A8B70072EEAE /* HeroineProfileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroineProfileTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +233,9 @@
 				EA16C627185297B2000E5B54 /* CardTableViewCell.h */,
 				EA16C628185297B2000E5B54 /* CardTableViewCell.m */,
 				EA16C6231852965F000E5B54 /* CardTableViewCell.xib */,
+				EA5103161852A8B70072EEAE /* HeroineProfileTableViewCell.h */,
+				EA5103171852A8B70072EEAE /* HeroineProfileTableViewCell.m */,
+				EA5103141852A8AB0072EEAE /* HeroineProfileTableViewCell.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 				EA16C6261852974E000E5B54 /* blue_brush_background.png in Resources */,
 				EA16C5FC18513615000E5B54 /* twitter_icon.png in Resources */,
 				EA16C5DA18512ED3000E5B54 /* Images.xcassets in Resources */,
+				EA5103151852A8AB0072EEAE /* HeroineProfileTableViewCell.xib in Resources */,
 				EA16C61E185290ED000E5B54 /* star_icon.png in Resources */,
 				EA16C62B18529868000E5B54 /* SaraBlakely.jpg in Resources */,
 				EA16C5CC18512ED3000E5B54 /* InfoPlist.strings in Resources */,
@@ -353,6 +362,7 @@
 				EA16C5D218512ED3000E5B54 /* AppDelegate.m in Sources */,
 				EA16C629185297B2000E5B54 /* CardTableViewCell.m in Sources */,
 				EA16C615185169E5000E5B54 /* DashboardViewController.m in Sources */,
+				EA5103181852A8B70072EEAE /* HeroineProfileTableViewCell.m in Sources */,
 				EA16C60C185169B0000E5B54 /* HeroineViewController.m in Sources */,
 				EA16C609185169A0000E5B54 /* CreateCardViewController.m in Sources */,
 				EA16C61818516A8E000E5B54 /* SWRevealViewController.m in Sources */,
@@ -566,6 +576,7 @@
 				EA16C5F218512ED3000E5B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA16C5F318512ED3000E5B54 /* Build configuration list for PBXNativeTarget "SuperheroineTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +585,7 @@
 				EA16C5F518512ED3000E5B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

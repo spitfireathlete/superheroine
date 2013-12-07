@@ -518,13 +518,13 @@ static NSString * const SWSegueRightIdentifier = @"sw_right";
         {
         }
         
-        @try
-        {
-            [self performSegueWithIdentifier:SWSegueRightIdentifier sender:nil];
-        }
-        @catch(NSException *exception)
-        {
-        }
+//        @try
+//        {
+//            [self performSegueWithIdentifier:SWSegueRightIdentifier sender:nil];
+//        }
+//        @catch(NSException *exception)
+//        {
+//        }
     }
     
     // Apple also tells us to do this:

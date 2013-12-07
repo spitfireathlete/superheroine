@@ -10,10 +10,12 @@
 #import "SWRevealViewController.h"
 #import "CardTableViewCell.h"
 #import "HeroineViewController.h"
-
+#import "APIClient.h"
+#import "Card.h"
 
 @interface CardsViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
+@property (strong, nonatomic) NSMutableArray *allCards;
 @end
 
 @implementation CardsViewController
@@ -30,38 +32,55 @@
     self.tableView.dataSource  = self;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"CardTableViewCell" bundle:nil] forCellReuseIdentifier:@"cardcell"];
+
+    [[APIClient sharedClient] getAllCardsOnSuccess:^(AFHTTPRequestOperation *operation, id response) {
+        
+        self.allCards = [Card cardsFromArray:response];
+        NSLog(@"%@", response);
+        [self.tableView reloadData];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error retrieving all cards from the API");
+    }];
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [self.allCards count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CardTableViewCell *cell = (CardTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"cardcell"];
-    cell.fullName.text = @"Sara Blakely";
-    cell.title.text = @"Founder and CEO of Spanx";
-    cell.numFavorites.text = @"222,222";
-    cell.numShares.text = @"123,234";
+    Card *card = [self.allCards objectAtIndex:indexPath.row];
+    
+    cell.fullName.text = card.name;
+    cell.title.text = card.title;
+    cell.numFavorites.text = @"123,456";
+    cell.numShares.text = @"234,345";
+//    cell.numFavorites.text = [NSString stringWithFormat:@"%@", card.numFaves];
+//    cell.numShares.text = [NSString stringWithFormat:@"%@", card.numShares];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    
     [self performSegueWithIdentifier:@"showheroine" sender:nil];
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 275;
+    return 210;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"showheroine"]){
-
+        HeroineViewController *vc = [segue destinationViewController];
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        Card *card = [self.allCards objectAtIndex:path.row];
+        NSLog(@"Selected Card: %@", card.name);
+        vc.selectedCard = card;
     }
 }
 

@@ -12,6 +12,16 @@
 @interface Card : RestObject
 
 @property (nonatomic, strong) NSString *objectId;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *bio;
+@property (nonatomic, strong) NSString *facts;
+@property (nonatomic, strong) NSString *advice;
+@property (nonatomic, strong) NSString *goals;
+@property (nonatomic, strong) NSString *quotes;
+@property (nonatomic, strong) NSString *numFaves;
+@property (nonatomic, strong) NSString *numShares;
+
 @property (nonatomic, strong) Superheroine *alterEgo;
 
 + (NSMutableArray *)cardsFromArray:(NSArray *)array;

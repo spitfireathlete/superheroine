@@ -59,10 +59,12 @@ static NSString * const BASE_URL = @"http://localhost:3000/";
 }
 
 - (NSDictionary *) setAuthToken: (NSDictionary *) params {
-    NSMutableDictionary *paramsWithAuth = [[NSMutableDictionary alloc] initWithDictionary: params];
-    CredentialStore *creds = [[CredentialStore alloc] init];
-    [paramsWithAuth setObject:[creds authToken] forKey:@"auth_token"];
-    return paramsWithAuth;
+//    NSMutableDictionary *paramsWithAuth = [[NSMutableDictionary alloc] initWithDictionary: params];
+//    CredentialStore *creds = [[CredentialStore alloc] init];
+//    [paramsWithAuth setObject:[creds authToken] forKey:@"auth_token"];
+//    return paramsWithAuth;
+//    
+    return params;
 }
 
 @end

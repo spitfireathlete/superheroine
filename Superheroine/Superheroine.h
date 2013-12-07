@@ -12,6 +12,9 @@
 @interface Superheroine : RestObject
 
 @property (nonatomic, strong) NSString *objectId;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *bio;
+
 @property (nonatomic, strong) NSArray *superpowers;
 
 + (NSMutableArray *)superheroinesFromArray:(NSArray *)array;

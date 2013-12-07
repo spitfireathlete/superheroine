@@ -15,6 +15,15 @@
     if (self = [super initWithDictionary:data]) {
         self.alterEgo = [[Superheroine alloc] initWithDictionary:[self valueOrNilForKeyPath:@"superheroine"]];
         self.objectId = [self valueOrNilForKeyPath:@"id"];
+        self.name = [self valueOrNilForKeyPath:@"display_name"];
+        self.title = [self valueOrNilForKeyPath:@"title"];
+        self.bio = [self valueOrNilForKeyPath:@"bio"];
+        self.facts = [self valueOrNilForKeyPath:@"facts"];
+        self.advice = [self valueOrNilForKeyPath:@"advice"];
+        self.goals = [self valueOrNilForKeyPath:@"goals"];
+        self.quotes = [self valueOrNilForKeyPath:@"quotes"];
+        self.numFaves = [self valueOrNilForKeyPath:@"num_favorites"];
+        self.numShares = [self valueOrNilForKeyPath:@"num_shares"];
     }
     return self;
 }

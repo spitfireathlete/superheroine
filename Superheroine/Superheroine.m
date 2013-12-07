@@ -16,6 +16,8 @@
         NSArray *powers = [self valueOrNilForKeyPath:@"superpowers"];
         self.superpowers = [Superpower superpowersFromArray:powers];
         self.objectId = [self valueOrNilForKeyPath:@"id"];
+        self.name = [self valueOrNilForKeyPath:@"display_name"];
+        self.bio = [self valueOrNilForKeyPath:@"bio"];
     }
     return self;
 }

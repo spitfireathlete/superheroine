@@ -101,7 +101,7 @@
                 <outlet property="numInspired" destination="vs7-W4-Jxi" id="a2d-fA-RLy"/>
                 <outlet property="title" destination="Au4-OY-how" id="vlT-Eb-kEF"/>
                 <outlet property="tweet" destination="kMd-Gt-Atz" id="Nyz-YY-Y81"/>
-                <outlet property="twitterHandle" destination="idU-vd-e5h" id="rtn-zc-WDn"/>
+                <outlet property="twitterHandle" destination="idU-vd-e5h" id="c3E-2Y-Xhp"/>
                 <outlet property="watchVideo" destination="OH9-gL-gfL" id="TVU-Nu-MiQ"/>
             </connections>
         </tableViewCell>

@@ -9,6 +9,7 @@
 #import "HeroineViewController.h"
 #import "HeroineProfileTableViewCell.h"
 #import "ComicBookSquareTableViewCell.h"
+#import "Card.h"
 
 @interface HeroineViewController ()
 
@@ -39,7 +40,14 @@
     NSIndexPath *firstRow = [NSIndexPath indexPathForRow:0 inSection:0];
     if ([indexPath isEqual:firstRow]) {
         HeroineProfileTableViewCell *headerCell = (HeroineProfileTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"profilecell"];
-        headerCell.fullName.text = @"KARA ZOREL";
+
+        
+        headerCell.fullName.text = self.selectedCard.name;
+        headerCell.title.text = self.selectedCard.title;
+        headerCell.numInspired.text = @"999,999";
+        headerCell.twitterHandle.text = @"@neverbendeasy";
+        //        headerCell.numInspired.text = [NSString stringWithFormat:@"%@", self.selectedCard.numFaves];
+        
         return headerCell;
     }
     

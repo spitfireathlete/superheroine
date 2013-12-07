@@ -51,7 +51,7 @@
         
         UIGraphicsEndImageContext();
         
-        [self postImage:finalImage  withStatus:@"testing image stitching"];
+        [self postImage:finalImage withStatus:@"Who is your inspiration? github.com/superheroine #chimehack #vitalvoices"];
     } else {
         NSLog(@"nope");
     }

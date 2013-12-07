@@ -25,4 +25,6 @@
 
 - (void) shareCard:(Card *) card success:(void (^)(AFHTTPRequestOperation *operation, id response)) success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
+- (void) createCard:(Card *) card withImage:(NSString *)imageString withAlterEgo:(Superheroine*) superheroine success:(void (^)(AFHTTPRequestOperation *operation, id response)) success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+
 @end

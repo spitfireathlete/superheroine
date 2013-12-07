@@ -12,7 +12,6 @@
 
 - (id) initWithDictionary:(NSDictionary *)data {
     if (self = [super initWithDictionary:data]) {
-        NSLog(@"%@", data);
 
     }
     return self;

@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateCardViewController : UIViewController <UIScrollViewDelegate, UITextFieldDelegate>
+@interface CreateCardViewController : UIViewController <UIScrollViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @end

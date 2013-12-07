@@ -16,6 +16,7 @@
 @interface CardsViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 @property (strong, nonatomic) NSMutableArray *allCards;
+
 @end
 
 @implementation CardsViewController
@@ -34,9 +35,9 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"CardTableViewCell" bundle:nil] forCellReuseIdentifier:@"cardcell"];
 
     [[APIClient sharedClient] getAllCardsOnSuccess:^(AFHTTPRequestOperation *operation, id response) {
-        
-        self.allCards = [Card cardsFromArray:response];
         NSLog(@"%@", response);
+        self.allCards = [Card cardsFromArray:response];
+        
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error retrieving all cards from the API");

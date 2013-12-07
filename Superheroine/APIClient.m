@@ -58,16 +58,23 @@ static NSString * const BASE_URL = @"http://localhost:3000/";
     
 }
 
+- (void) createCard:(Card *) card withImage:(NSString *)imageString withAlterEgo:(Superheroine*) superheroine success:(void (^)(AFHTTPRequestOperation *operation, id response)) success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
+    [manager POST:[NSString stringWithFormat:@"%@api/api/cards", BASE_URL] parameters:[self setAuthToken:@{@"photoData": imageString, @"superheroine_name":superheroine.name}] success:success failure:failure];
+    
+}
+
 - (NSDictionary *) setAuthToken: (NSDictionary *) params {
     NSMutableDictionary *paramsWithAuth = [[NSMutableDictionary alloc] initWithDictionary: params];
 
-    [paramsWithAuth setObject:@"ztF8CSsD-yJeDQs8sMcf" forKey:@"auth_token"];
+//    [paramsWithAuth setObject:@"ztF8CSsD-yJeDQs8sMcf" forKey:@"auth_token"];
 //    CredentialStore *creds = [[CredentialStore alloc] init];
 //    [paramsWithAuth setObject:[creds authToken] forKey:@"auth_token"];
 
 
 // Nidhi Token
-//    [paramsWithAuth setObject:@"1hxcxs5zaENK6bvj3rxF" forKey:@"auth_token"];
+    [paramsWithAuth setObject:@"1hxcxs5zaENK6bvj3rxF" forKey:@"auth_token"];
 //    CredentialStore *creds = [[CredentialStore alloc] init];
 //    [paramsWithAuth setObject:[creds authToken] forKey:@"auth_token"];
     return paramsWithAuth;

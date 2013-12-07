@@ -8,6 +8,9 @@
 
 #import "CreateCardViewController.h"
 #import "SWRevealViewController.h"
+#import "APIClient.h"
+#import "Card.h"
+#import "Superheroine.h"
 
 @interface CreateCardViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
@@ -41,6 +44,13 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *saveButton;
 
+
+@property (strong, nonatomic) UIImage *imagePicked;
+@property (strong, nonatomic) Card *card;
+@property (strong, nonatomic) Superheroine *superheroine;
+
+- (IBAction)addPhotoAction:(id)sender;
+- (IBAction)createCardAction:(id)sender;
 
 @end
 
@@ -93,6 +103,62 @@
     
     [self.view addSubview:self.scrollView];
     
+}
+
+- (IBAction)addPhotoAction:(id)sender {
+    UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    
+    // Displays a control that allows the user to choose picture or
+    // movie capture, if both are available:
+    cameraUI.mediaTypes =
+    [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
+    
+    // Hides the controls for moving & scaling pictures, or for
+    // trimming movies. To instead show the controls, use YES.
+    cameraUI.allowsEditing = NO;
+    
+    cameraUI.delegate = self;
+    
+    [self presentViewController:cameraUI animated:YES completion:nil];
+
+}
+
+- (IBAction)createCardAction:(id)sender {
+    NSData *imageData = [NSData dataWithData:UIImageJPEGRepresentation(self.imagePicked, .1)];
+    NSString *imageAsbase64String = [imageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    NSLog(@"%@", imageAsbase64String);
+
+    self.card = [[Card alloc] initWithDictionary:@{@"name":self.name.text,
+                                                   @"bio":self.biography.text,
+                                                   @"facts":self.interestingFact.text,
+                                                   @"quote":self.quote.text,
+                                                   @"goals":self.goal.text,
+                                                   @"video_link":self.videoLink.text,
+                                                   @"twitter_handle":self.twitter.text}];
+    
+    
+    [[APIClient sharedClient] createCard:(Card *)self.card withImage:imageAsbase64String withAlterEgo:self.superheroine success:^(AFHTTPRequestOperation *operation, id response) {
+        NSLog(@"%@", response);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", error);
+    }];
+}
+
+
+- (void) imagePickerController: (UIImagePickerController *) picker didFinishPickingMediaWithInfo: (NSDictionary *) info {
+    
+    NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
+    NSLog(@"%@", mediaType);
+    UIImage *originalImage = (UIImage *) [info objectForKey:
+                                          UIImagePickerControllerOriginalImage];
+    self.imagePicked = originalImage;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

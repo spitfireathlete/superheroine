@@ -279,10 +279,10 @@
 		EA16C60018516949000E5B54 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EA16C61A1851D46E000E5B54 /* CardsViewController.h */,
-				EA16C61B1851D46E000E5B54 /* CardsViewController.m */,
 				EA16C607185169A0000E5B54 /* CreateCardViewController.h */,
 				EA16C608185169A0000E5B54 /* CreateCardViewController.m */,
+				EA16C61A1851D46E000E5B54 /* CardsViewController.h */,
+				EA16C61B1851D46E000E5B54 /* CardsViewController.m */,
 				EA16C610185169D6000E5B54 /* MainNavigationViewController.h */,
 				EA16C611185169D6000E5B54 /* MainNavigationViewController.m */,
 				EA16C60A185169B0000E5B54 /* HeroineViewController.h */,

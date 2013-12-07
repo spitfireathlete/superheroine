@@ -58,6 +58,12 @@
 		EA5103261853D1700072EEAE /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103251853D1700072EEAE /* menu_icon.png */; };
 		EA5103281853D4260072EEAE /* blue_twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103271853D4260072EEAE /* blue_twitter_icon.png */; };
 		EA51032A1853D42B0072EEAE /* gold_star.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103291853D42B0072EEAE /* gold_star.png */; };
+		EA5103321853E5350072EEAE /* cheetarahDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51032B1853E5350072EEAE /* cheetarahDone.png */; };
+		EA5103331853E5350072EEAE /* chunLiDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51032C1853E5350072EEAE /* chunLiDone.png */; };
+		EA5103341853E5350072EEAE /* doraDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51032D1853E5350072EEAE /* doraDone.png */; };
+		EA5103351853E5350072EEAE /* firestarDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51032E1853E5350072EEAE /* firestarDone.png */; };
+		EA5103361853E5350072EEAE /* huntressDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51032F1853E5350072EEAE /* huntressDone.png */; };
+		EA5103381853E5350072EEAE /* mistyDone.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103311853E5350072EEAE /* mistyDone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +151,12 @@
 		EA5103251853D1700072EEAE /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
 		EA5103271853D4260072EEAE /* blue_twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_twitter_icon.png; sourceTree = "<group>"; };
 		EA5103291853D42B0072EEAE /* gold_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold_star.png; sourceTree = "<group>"; };
+		EA51032B1853E5350072EEAE /* cheetarahDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheetarahDone.png; sourceTree = "<group>"; };
+		EA51032C1853E5350072EEAE /* chunLiDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chunLiDone.png; sourceTree = "<group>"; };
+		EA51032D1853E5350072EEAE /* doraDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doraDone.png; sourceTree = "<group>"; };
+		EA51032E1853E5350072EEAE /* firestarDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firestarDone.png; sourceTree = "<group>"; };
+		EA51032F1853E5350072EEAE /* huntressDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huntressDone.png; sourceTree = "<group>"; };
+		EA5103311853E5350072EEAE /* mistyDone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mistyDone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +287,12 @@
 		EA16C5F618513609000E5B54 /* Image Assets */ = {
 			isa = PBXGroup;
 			children = (
+				EA51032B1853E5350072EEAE /* cheetarahDone.png */,
+				EA51032C1853E5350072EEAE /* chunLiDone.png */,
+				EA51032D1853E5350072EEAE /* doraDone.png */,
+				EA51032E1853E5350072EEAE /* firestarDone.png */,
+				EA51032F1853E5350072EEAE /* huntressDone.png */,
+				EA5103311853E5350072EEAE /* mistyDone.png */,
 				02D8863D1853C3540083AF8F /* JeanGrey.png */,
 				EA5103271853D4260072EEAE /* blue_twitter_icon.png */,
 				EA5103291853D42B0072EEAE /* gold_star.png */,
@@ -413,6 +431,7 @@
 			files = (
 				EA16C62F18529E7C000E5B54 /* video_icon.png in Resources */,
 				02D8863C1853C2FC0083AF8F /* WonderWoman.png in Resources */,
+				EA5103331853E5350072EEAE /* chunLiDone.png in Resources */,
 				EA51032A1853D42B0072EEAE /* gold_star.png in Resources */,
 				EA16C6261852974E000E5B54 /* blue_brush_background.png in Resources */,
 				EA16C5FC18513615000E5B54 /* twitter_icon.png in Resources */,
@@ -421,17 +440,22 @@
 				EA5103151852A8AB0072EEAE /* HeroineProfileTableViewCell.xib in Resources */,
 				EA16C61E185290ED000E5B54 /* star_icon.png in Resources */,
 				EA16C62B18529868000E5B54 /* SaraBlakely.jpg in Resources */,
+				EA5103381853E5350072EEAE /* mistyDone.png in Resources */,
+				EA5103341853E5350072EEAE /* doraDone.png in Resources */,
 				EA16C5CC18512ED3000E5B54 /* InfoPlist.strings in Resources */,
 				EA16C5FA18513615000E5B54 /* facebook_icon.png in Resources */,
 				EA5103261853D1700072EEAE /* menu_icon.png in Resources */,
+				EA5103361853E5350072EEAE /* huntressDone.png in Resources */,
 				EA51031E1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib in Resources */,
 				EA51031C1852ACCC0072EEAE /* paper_pattern.png in Resources */,
 				EA16C5FB18513615000E5B54 /* pinterest_icon.png in Resources */,
 				EA16C62D18529D59000E5B54 /* Supergirl.png in Resources */,
+				EA5103321853E5350072EEAE /* cheetarahDone.png in Resources */,
 				EA16C5D518512ED3000E5B54 /* Main.storyboard in Resources */,
 				EA51031A1852AC8C0072EEAE /* halftone.png in Resources */,
 				EA5103281853D4260072EEAE /* blue_twitter_icon.png in Resources */,
 				EA16C6241852965F000E5B54 /* CardTableViewCell.xib in Resources */,
+				EA5103351853E5350072EEAE /* firestarDone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

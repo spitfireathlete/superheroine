@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HeroineViewController : UIViewController
-
+@interface HeroineViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end

@@ -20,6 +20,10 @@
     
     return self;
 }
+- (void) setSelected:(BOOL) selected animated:(BOOL) animated {
+    
+}
+
 - (IBAction)tweet:(id)sender {
 }
 

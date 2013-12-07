@@ -9,6 +9,8 @@
 #import "CardsViewController.h"
 #import "SWRevealViewController.h"
 #import "CardTableViewCell.h"
+#import "HeroineViewController.h"
+#import "SuperheroineViewController.h"
 
 @interface CardsViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
@@ -44,10 +46,26 @@
     cell.numShares.text = @"123,234";
     return cell;
 }
+µ
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    
+    [self performSegueWithIdentifier:@"showheroine" sender:nil];
+    
+    
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 275;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"showheroine"]){
+
+    }
 }
 
 @end

@@ -14,6 +14,7 @@
 		021B0F351852A5530026FAF5 /* Superheroine.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F341852A5530026FAF5 /* Superheroine.m */; };
 		021B0F391852A8FD0026FAF5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F381852A8FD0026FAF5 /* User.m */; };
 		021B0F3C1852A99A0026FAF5 /* Superpower.m in Sources */ = {isa = PBXBuildFile; fileRef = 021B0F3B1852A99A0026FAF5 /* Superpower.m */; };
+		02D066DF185301C4003D07E2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D066DE185301C4003D07E2 /* Social.framework */; };
 		9A2A9673C95B4EA2AEFE87A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24847E9FD99444BCB629A811 /* libPods.a */; };
 		EA16C5C218512ED3000E5B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C118512ED3000E5B54 /* Foundation.framework */; };
 		EA16C5C418512ED3000E5B54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA16C5C318512ED3000E5B54 /* CoreGraphics.framework */; };
@@ -78,6 +79,7 @@
 		021B0F381852A8FD0026FAF5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		021B0F3A1852A99A0026FAF5 /* Superpower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superpower.h; sourceTree = "<group>"; };
 		021B0F3B1852A99A0026FAF5 /* Superpower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Superpower.m; sourceTree = "<group>"; };
+		02D066DE185301C4003D07E2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		09971B6D9A1E4581B1CC7BBC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		24847E9FD99444BCB629A811 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA16C5BE18512ED3000E5B54 /* Superheroine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D066DF185301C4003D07E2 /* Social.framework in Frameworks */,
 				EA16C5C418512ED3000E5B54 /* CoreGraphics.framework in Frameworks */,
 				EA16C5C618512ED3000E5B54 /* UIKit.framework in Frameworks */,
 				EA16C5C218512ED3000E5B54 /* Foundation.framework in Frameworks */,
@@ -196,6 +199,7 @@
 		EA16C5C018512ED3000E5B54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02D066DE185301C4003D07E2 /* Social.framework */,
 				EA16C5C118512ED3000E5B54 /* Foundation.framework */,
 				EA16C5C318512ED3000E5B54 /* CoreGraphics.framework */,
 				EA16C5C518512ED3000E5B54 /* UIKit.framework */,

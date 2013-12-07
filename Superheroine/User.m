@@ -8,6 +8,7 @@
 
 #import "User.h"
 #import "CredentialStore.h"
+#import <Social/Social.h>
 
 NSString * const UserDidLoginToClarityNotification = @"UserDidLoginToSuperheroineNotification";
 NSString * const UserDidLogoutFromClarityNotification = @"UserDidLogoutFromSuperheroineNotification";
@@ -49,6 +50,12 @@ static User *_currentUser;
         _currentUser = currentUser; // Needs to be set before firing the notification
         [[NSNotificationCenter defaultCenter] postNotificationName:UserDidLogoutFromClarityNotification object:nil];
     }
+}
+
++ (BOOL)userHasAccessToTwitter
+{
+    return [SLComposeViewController
+            isAvailableForServiceType:SLServiceTypeTwitter];
 }
 
 @end

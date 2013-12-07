@@ -12,5 +12,6 @@
 
 + (User *)currentUser;
 + (void)setCurrentUser:(User *) currentUser;
++ (BOOL)userHasAccessToTwitter;
 
 @end

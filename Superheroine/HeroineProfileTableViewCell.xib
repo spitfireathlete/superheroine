@@ -72,22 +72,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPa-rA-rXF">
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPa-rA-rXF">
                         <rect key="frame" x="271" y="47" width="35" height="35"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" image="star_icon.png">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <state key="selected" image="gold_star.png"/>
+                        <state key="highlighted" image="gold_star.png"/>
                         <connections>
                             <action selector="favorite:" destination="Fru-5h-h9x" eventType="touchUpInside" id="dWh-KD-zIU"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMd-Gt-Atz">
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMd-Gt-Atz">
                         <rect key="frame" x="271" y="9" width="35" height="35"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" image="twitter_icon.png">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <state key="selected" image="blue_twitter_icon.png"/>
+                        <state key="highlighted" image="blue_twitter_icon.png"/>
                         <connections>
                             <action selector="tweet:" destination="Fru-5h-h9x" eventType="touchUpInside" id="HKh-g4-bv7"/>
                         </connections>
@@ -108,6 +112,8 @@
     </objects>
     <resources>
         <image name="Supergirl.png" width="618" height="330"/>
+        <image name="blue_twitter_icon.png" width="39" height="39"/>
+        <image name="gold_star.png" width="39" height="40"/>
         <image name="star_icon.png" width="39" height="40"/>
         <image name="twitter_icon.png" width="39" height="39"/>
         <image name="video_icon.png" width="41" height="28"/>

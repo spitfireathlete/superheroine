@@ -56,6 +56,8 @@
 		EA5103211852AD260072EEAE /* ComicBookSquareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5103201852AD260072EEAE /* ComicBookSquareTableViewCell.m */; };
 		EA51032418531C870072EEAE /* SuperHeroineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA51032318531C870072EEAE /* SuperHeroineViewController.m */; };
 		EA5103261853D1700072EEAE /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103251853D1700072EEAE /* menu_icon.png */; };
+		EA5103281853D4260072EEAE /* blue_twitter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103271853D4260072EEAE /* blue_twitter_icon.png */; };
+		EA51032A1853D42B0072EEAE /* gold_star.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5103291853D42B0072EEAE /* gold_star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,8 @@
 		EA51032218531C870072EEAE /* SuperHeroineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperHeroineViewController.h; sourceTree = "<group>"; };
 		EA51032318531C870072EEAE /* SuperHeroineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperHeroineViewController.m; sourceTree = "<group>"; };
 		EA5103251853D1700072EEAE /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
+		EA5103271853D4260072EEAE /* blue_twitter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_twitter_icon.png; sourceTree = "<group>"; };
+		EA5103291853D42B0072EEAE /* gold_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold_star.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				02D8863D1853C3540083AF8F /* JeanGrey.png */,
+				EA5103271853D4260072EEAE /* blue_twitter_icon.png */,
+				EA5103291853D42B0072EEAE /* gold_star.png */,
 				02D8863B1853C2FC0083AF8F /* WonderWoman.png */,
 				EA51031B1852ACCC0072EEAE /* paper_pattern.png */,
 				EA5103251853D1700072EEAE /* menu_icon.png */,
@@ -407,6 +413,7 @@
 			files = (
 				EA16C62F18529E7C000E5B54 /* video_icon.png in Resources */,
 				02D8863C1853C2FC0083AF8F /* WonderWoman.png in Resources */,
+				EA51032A1853D42B0072EEAE /* gold_star.png in Resources */,
 				EA16C6261852974E000E5B54 /* blue_brush_background.png in Resources */,
 				EA16C5FC18513615000E5B54 /* twitter_icon.png in Resources */,
 				EA16C5DA18512ED3000E5B54 /* Images.xcassets in Resources */,
@@ -423,6 +430,7 @@
 				EA16C62D18529D59000E5B54 /* Supergirl.png in Resources */,
 				EA16C5D518512ED3000E5B54 /* Main.storyboard in Resources */,
 				EA51031A1852AC8C0072EEAE /* halftone.png in Resources */,
+				EA5103281853D4260072EEAE /* blue_twitter_icon.png in Resources */,
 				EA16C6241852965F000E5B54 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

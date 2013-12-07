@@ -70,14 +70,14 @@ static NSString * const BASE_URL = @"http://localhost:3000/";
 
 - (NSDictionary *) setAuthToken: (NSDictionary *) params {
     NSMutableDictionary *paramsWithAuth = [[NSMutableDictionary alloc] initWithDictionary: params];
-
-//    [paramsWithAuth setObject:@"ztF8CSsD-yJeDQs8sMcf" forKey:@"auth_token"];
+// Erin Token
+    [paramsWithAuth setObject:@"ztF8CSsD-yJeDQs8sMcf" forKey:@"auth_token"];
 //    CredentialStore *creds = [[CredentialStore alloc] init];
 //    [paramsWithAuth setObject:[creds authToken] forKey:@"auth_token"];
 
 
 // Nidhi Token
-    [paramsWithAuth setObject:@"1hxcxs5zaENK6bvj3rxF" forKey:@"auth_token"];
+//    [paramsWithAuth setObject:@"1hxcxs5zaENK6bvj3rxF" forKey:@"auth_token"];
 //    CredentialStore *creds = [[CredentialStore alloc] init];
 //    [paramsWithAuth setObject:[creds authToken] forKey:@"auth_token"];
     return paramsWithAuth;

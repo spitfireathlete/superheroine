@@ -68,6 +68,7 @@
     [[APIClient sharedClient] favoriteCard:self.card success:^(AFHTTPRequestOperation *operation, id response) {
         NSLog(@"%@", response);
         self.numInspired.text = [NSString stringWithFormat:@"%d", [self.card.numFaves intValue] + 1];
+        [self.favorite setSelected:YES];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error recording favorite");
@@ -101,7 +102,7 @@
                                                 options:NSJSONReadingMutableContainers
                                                   error:NULL];
                 NSLog(@"[SUCCESS!] Created Tweet with ID: %@", postResponseData[@"id_str"]);
-                
+                [self.tweet setSelected:YES];
                 
                 [[APIClient sharedClient] shareCard:self.card success:^(AFHTTPRequestOperation *operation, id response) {
                     NSLog(@"%@", response);

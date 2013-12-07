@@ -11,6 +11,7 @@
 #import <Social/Social.h>
 #import "User.h"
 #import "APIClient.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface HeroineProfileTableViewCell()
 
@@ -40,8 +41,11 @@
 
     if ([User userHasAccessToTwitter]) {
         NSLog(@"tweeet");
-        UIImage *image1 = [UIImage imageNamed:@"Supergirl.png"];
-        UIImage *image2 = [UIImage imageNamed:@"SaraBlakely.jpg"];
+        
+        NSData *data = [NSData dataWithContentsOfURL:self.card.photoUrl];
+        UIImage *image1 = [[UIImage alloc] initWithData:data];
+        
+        UIImage *image2 = [UIImage imageNamed:@"Supergirl.png"];
         
         CGSize size = CGSizeMake(image1.size.width, image1.size.height + image2.size.height);
         
@@ -53,7 +57,7 @@
         
         UIGraphicsEndImageContext();
         
-        [self postImage:finalImage withStatus:@"Who is your inspiration? github.com/superheroine #chimehack #vitalvoices"];
+        [self postImage:finalImage withStatus:[NSString stringWithFormat:@"Who is your inspiration? Mine is %@. http://bit.ly/1aJttjC #chimehack #vitalvoices", self.card.displayName]];
     } else {
         NSLog(@"nope");
     }

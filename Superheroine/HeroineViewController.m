@@ -42,7 +42,7 @@
     if ([indexPath isEqual:firstRow]) {
         HeroineProfileTableViewCell *headerCell = (HeroineProfileTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"profilecell"];
 
-        headerCell.fullName.text = self.selectedCard.name;
+        headerCell.fullName.text = self.selectedCard.displayName;
         headerCell.title.text = self.selectedCard.title;
         headerCell.twitterHandle.text = self.selectedCard.twitterHandle;
         headerCell.numInspired.text = [NSString stringWithFormat:@"%@", self.selectedCard.numFaves];

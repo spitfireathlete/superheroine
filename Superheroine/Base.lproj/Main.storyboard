@@ -9,16 +9,16 @@
             <objects>
                 <viewController storyboardIdentifier="HeroineViewController" id="vnB-Eo-9lc" customClass="HeroineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uaD-El-bDH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="632"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lWc-Yx-pSW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="632"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="profilecell" rowHeight="180" id="rLh-v5-wb2" customClass="HeroineProfileTableViewCell">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="180"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rLh-v5-wb2" id="eqz-yz-XOn">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="180"/>
@@ -29,7 +29,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comiccell" rowHeight="112" id="RXn-2j-B8z" customClass="ComicBookSquareTableViewCell">
-                                        <rect key="frame" x="0.0" y="266" width="320" height="112"/>
+                                        <rect key="frame" x="0.0" y="202" width="320" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RXn-2j-B8z" id="PWg-qt-iH1">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
@@ -60,12 +60,12 @@
             <objects>
                 <tableViewController storyboardIdentifier="SuperHeroineViewController" id="k35-Wb-pmV" customClass="SuperHeroineViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mul-tE-pba">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="94" width="320" height="386"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="profilecell" rowHeight="119" id="myR-cU-coB" customClass="HeroineProfileTableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="119"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myR-cU-coB" id="eTo-g7-TKM">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
@@ -73,7 +73,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="comiccell" rowHeight="83" id="oiM-nJ-QcF" customClass="ComicBookSquareTableViewCell">
-                                <rect key="frame" x="0.0" y="205" width="320" height="83"/>
+                                <rect key="frame" x="0.0" y="141" width="320" height="83"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oiM-nJ-QcF" id="SKJ-d7-fGu">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
@@ -87,7 +87,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="IhK-jx-p2q"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bX-oo-VQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,15 +98,15 @@
             <objects>
                 <viewController storyboardIdentifier="CreateCardViewController" id="cwi-bb-CtP" customClass="CreateCardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DOF-ct-Pbb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="696"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="vzO-Vx-HEH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="696"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="KTZ-Rr-SV6">
-                                        <rect key="frame" x="0.0" y="-362" width="320" height="930"/>
+                                        <rect key="frame" x="0.0" y="-362" width="320" height="1058"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1X6-MC-CXZ">
@@ -259,7 +259,7 @@
                             <color key="tintColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="addPhotoButton" destination="K3m-oC-yJQ" id="9Uz-iU-Y2f"/>
@@ -293,12 +293,12 @@
             <objects>
                 <tableViewController id="Sqj-Z4-yeN" customClass="SuperheroineListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="Fem-LV-Tw5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="632"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SuperheroineCell" textLabel="Pwy-cr-db0" rowHeight="65" style="IBUITableViewCellStyleDefault" id="Xb5-0W-Yaq">
-                                <rect key="frame" x="0.0" y="86" width="320" height="65"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="Xb5-0W-Yaq" id="6VV-4w-SCl">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
@@ -335,6 +335,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <segue destination="x2E-O0-vFR" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="qhw-2W-EL2"/>
                         <segue destination="KSN-ug-0y1" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="Lwd-D1-ZUq"/>
@@ -405,16 +406,16 @@
             <objects>
                 <viewController storyboardIdentifier="CardsViewController" id="azp-Ar-5Jq" customClass="CardsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I8I-O8-hco">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="632"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pIr-ZR-FMz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="632"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" restorationIdentifier="CardTableViewCell" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cardcell" id="iXJ-G4-4KD" customClass="CardTableViewCell">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iXJ-G4-4KD" id="nYv-qp-tgc">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -453,7 +454,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KSN-ug-0y1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="1a0-O5-CP0"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oOm-w0-1x6">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="oOm-w0-1x6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -471,7 +473,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U1G-VL-DZo" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qk1-8h-Ngk">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="qk1-8h-Ngk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -487,7 +490,6 @@
     </scenes>
     <resources>
         <image name="menu_icon.png" width="23" height="24"/>
-        <image name="menu_icon.png" width="23" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -495,7 +497,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="NgZ-Xz-xWc"/>
+        <segue reference="8V1-ak-Yfj"/>
         <segue reference="pYn-4t-jFB"/>
     </inferredMetricsTieBreakers>
 </document>

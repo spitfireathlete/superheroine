@@ -29,6 +29,22 @@
         
     [self.tableView registerNib:[UINib nibWithNibName:@"HeroineProfileTableViewCell" bundle:nil] forCellReuseIdentifier:@"profilecell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"ComicBookSquareTableViewCell" bundle:nil] forCellReuseIdentifier:@"comiccell"];
+    
+    // Main Navigation Bar
+    self.title = self.selectedCard.displayName;
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.102 green:0.102 blue:0.102 alpha:1]]; /*#1a1a1a*/
+    
+    [self.navigationController.navigationBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                                      [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                                      [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:17.0f], NSFontAttributeName, nil]];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:15.0f], NSFontAttributeName,
+                                                          nil] forState:UIControlStateNormal];
+    
+    [self.navigationController.navigationBar setTranslucent:NO];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -34,6 +34,17 @@
     self.tableView.dataSource  = self;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"CardTableViewCell" bundle:nil] forCellReuseIdentifier:@"cardcell"];
+    
+    // Main Navigation Bar
+    self.title = @"SUPERHEROINE JUSTICE LEAGUE";
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.102 green:0.102 blue:0.102 alpha:1]]; /*#1a1a1a*/
+    
+    [self.navigationController.navigationBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                                      [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                                      [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:16.0f], NSFontAttributeName, nil]];
+    
+    [self.navigationController.navigationBar setTranslucent:NO];
 
     [[APIClient sharedClient] getAllCardsOnSuccess:^(AFHTTPRequestOperation *operation, id response) {
         NSLog(@"%@", response);

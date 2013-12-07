@@ -61,6 +61,17 @@
 {
     [super viewDidLoad];
     
+    // Main Navigation Bar
+    self.title = @"CREATE A CARD";
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.102 green:0.102 blue:0.102 alpha:1]]; /*#1a1a1a*/
+    
+    [self.navigationController.navigationBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                                      [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                                      [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:20.0f], NSFontAttributeName, nil]];
+    
+    [self.navigationController.navigationBar setTranslucent:NO];
+    
     [self.menuButton setTarget:self.revealViewController];
     [self.menuButton setAction:@selector(revealToggle:)];
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];

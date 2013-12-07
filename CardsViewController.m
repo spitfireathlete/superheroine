@@ -10,7 +10,6 @@
 #import "SWRevealViewController.h"
 #import "CardTableViewCell.h"
 #import "HeroineViewController.h"
-#import "SuperheroineViewController.h"
 
 
 @interface CardsViewController ()

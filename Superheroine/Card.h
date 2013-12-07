@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSString *objectId;
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *displayName;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *bio;
 @property (nonatomic, strong) NSString *facts;
@@ -24,6 +25,8 @@
 @property (nonatomic, strong) NSArray *videos;
 @property (nonatomic, strong) NSURL *videoLink;
 @property (nonatomic, strong) NSString *twitterHandle;
+
+@property (nonatomic, strong) NSURL *photoUrl;
 
 @property (nonatomic, strong) Superheroine *alterEgo;
 

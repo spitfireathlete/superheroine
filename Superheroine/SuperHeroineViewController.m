@@ -49,7 +49,7 @@
     if ([indexPath isEqual:firstRow]) {
         HeroineProfileTableViewCell *headerCell = (HeroineProfileTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"profilecell"];
         
-        headerCell.fullName.text = self.superheroine.name;
+        headerCell.fullName.text = self.superheroine.displayName;
         headerCell.title.text = @"";
         headerCell.twitterHandle.text = @"";
         return headerCell;

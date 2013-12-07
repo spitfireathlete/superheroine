@@ -59,7 +59,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     [self.menuButton setTarget:self.revealViewController];
     [self.menuButton setAction:@selector(revealToggle:)];
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
@@ -69,24 +69,31 @@
     
     [self.contentView addSubview:self.name];
     [self.contentView addSubview:self.nameTextField];
+    self.nameTextField.delegate = self;
     
     [self.contentView addSubview:self.twitter];
     [self.contentView addSubview:self.twitterTextField];
+    self.twitterTextField.delegate = self;
     
     [self.contentView addSubview:self.biography];
     [self.contentView addSubview:self.biographyTextField];
+    self.biographyTextField.delegate = self;
     
     [self.contentView addSubview:self.interestingFact];
     [self.contentView addSubview:self.interestingFactTextField];
+    self.interestingFactTextField.delegate = self;
     
     [self.contentView addSubview:self.quote];
     [self.contentView addSubview:self.quoteTextField];
+    self.quoteTextField.delegate =  self;
     
     [self.contentView addSubview:self.goal];
     [self.contentView addSubview:self.goalTextField];
+    self.goalTextField.delegate = self;
     
     [self.contentView addSubview:self.videoLink];
     [self.contentView addSubview:self.videoLinkTextField];
+    self.videoLinkTextField.delegate = self;
     
     [self.contentView addSubview:self.chooseSuperheroineButton];
     
@@ -102,8 +109,40 @@
     [self.scrollView addSubview:self.contentView];
     
     [self.view addSubview:self.scrollView];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(setSelectedSuperheroine:) name:@"UserSelectedSuperheroine" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(deselectSuperheroine:) name:@"UserDeselectedSuperheroine" object:nil];
     
 }
+-(void) setSelectedSuperheroine:(NSNotification *) sentObject{
+    self.superheroine = (Superheroine *) [sentObject object] ;
+    NSLog(@"%@ selected",self.superheroine.displayName);
+}
+
+-(void) deselectSuperheroine:(NSNotification *) sentObject{
+    NSLog(@"%@ deselected",self.superheroine.displayName);
+    self.superheroine = nil;
+}
+- (BOOL) textFieldShouldBeginEditing:(UITextField *)textField {
+    return YES;
+}
+
+- (BOOL) textFieldShouldEndEditing:(UITextField *)textField {
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self dismissKeyboard];
+    return YES;
+}
+
+- (void) dismissKeyboard {
+    [self.view endEditing:YES];
+}
+
+
 
 - (IBAction)addPhotoAction:(id)sender {
     UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
@@ -129,13 +168,14 @@
     NSString *imageAsbase64String = [imageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     NSLog(@"%@", imageAsbase64String);
 
-    self.card = [[Card alloc] initWithDictionary:@{@"name":self.name.text,
-                                                   @"bio":self.biography.text,
-                                                   @"facts":self.interestingFact.text,
-                                                   @"quote":self.quote.text,
-                                                   @"goals":self.goal.text,
-                                                   @"video_link":self.videoLink.text,
-                                                   @"twitter_handle":self.twitter.text}];
+    self.card = [[Card alloc] initWithDictionary:@{@"name":self.nameTextField.text,
+                                                   @"display_name":self.nameTextField.text,
+                                                   @"bio":self.biographyTextField.text,
+                                                   @"facts":self.interestingFactTextField.text,
+                                                   @"quote":self.quoteTextField.text,
+                                                   @"goals":self.goalTextField.text,
+                                                   @"video_link":self.videoLinkTextField.text,
+                                                   @"twitter_handle":self.twitterTextField.text}];
     
     
     [[APIClient sharedClient] createCard:(Card *)self.card withImage:imageAsbase64String withAlterEgo:self.superheroine success:^(AFHTTPRequestOperation *operation, id response) {

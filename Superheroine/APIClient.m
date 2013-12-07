@@ -47,21 +47,24 @@ static NSString * const BASE_URL = @"http://localhost:3000/";
 - (void) favoriteCard:(Card *) card success:(void (^)(AFHTTPRequestOperation *operation, id response)) success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
-    [manager PUT:[NSString stringWithFormat:@"%@api/api/cards/%@/favorite", BASE_URL, card.objectId] parameters:[self setAuthToken:nil] success:success failure:failure];
+    [manager PUT:[NSString stringWithFormat:@"%@api/cards/%@/favorite", BASE_URL, card.objectId] parameters:[self setAuthToken:nil] success:success failure:failure];
     
 }
 
 - (void) shareCard:(Card *) card success:(void (^)(AFHTTPRequestOperation *operation, id response)) success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
-    [manager PUT:[NSString stringWithFormat:@"%@api/api/cards/%@/share", BASE_URL, card.objectId] parameters:[self setAuthToken:nil] success:success failure:failure];
+    [manager PUT:[NSString stringWithFormat:@"%@api/cards/%@/share", BASE_URL, card.objectId] parameters:[self setAuthToken:nil] success:success failure:failure];
     
 }
 
 - (void) createCard:(Card *) card withImage:(NSString *)imageString withAlterEgo:(Superheroine*) superheroine success:(void (^)(AFHTTPRequestOperation *operation, id response)) success failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
-    [manager POST:[NSString stringWithFormat:@"%@api/api/cards", BASE_URL] parameters:[self setAuthToken:@{@"photoData": imageString, @"superheroine_name":superheroine.name}] success:success failure:failure];
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithDictionary: card.data];
+    [params setObject:imageString forKey:@"photoData"];
+    [params setObject:superheroine.name forKey:@"superheroine_name"];
+    [manager POST:[NSString stringWithFormat:@"%@api/cards", BASE_URL] parameters:[self setAuthToken:params] success:success failure:failure];
     
 }
 

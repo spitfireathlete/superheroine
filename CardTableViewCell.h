@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *title;
 @property (strong, nonatomic) IBOutlet UILabel *numFavorites;
 @property (strong, nonatomic) IBOutlet UILabel *numShares;
+@property (weak, nonatomic) IBOutlet UIImageView *profilePicture;
 
 @end

@@ -12,6 +12,7 @@
 #import "HeroineViewController.h"
 #import "APIClient.h"
 #import "Card.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface CardsViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
@@ -55,10 +56,11 @@
     CardTableViewCell *cell = (CardTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"cardcell"];
     Card *card = [self.allCards objectAtIndex:indexPath.row];
     
-    cell.fullName.text = card.name;
+    cell.fullName.text = card.displayName;
     cell.title.text = card.title;
     cell.numFavorites.text = [NSString stringWithFormat:@"%@", card.numFaves];
     cell.numShares.text = [NSString stringWithFormat:@"%@", card.numShares];
+    [cell.profilePicture setImageWithURL:card.photoUrl];
     return cell;
 }
 

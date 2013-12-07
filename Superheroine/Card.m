@@ -14,27 +14,70 @@
 - (id) initWithDictionary:(NSDictionary *)data {
     if (self = [super initWithDictionary:data]) {
         NSLog(@"%@", [self valueOrNilForKeyPath:@"display_name"]);
-        self.alterEgo = [[Superheroine alloc] initWithDictionary:[self valueOrNilForKeyPath:@"superheroine"]];
+        if ([self valueOrNilForKeyPath:@"superheroine"] != nil) {
+          self.alterEgo = [[Superheroine alloc] initWithDictionary:[self valueOrNilForKeyPath:@"superheroine"]];
+        }
+        
         self.objectId = [self valueOrNilForKeyPath:@"id"];
-        self.name = [self valueOrNilForKeyPath:@"display_name"];
+        self.name = [self valueOrNilForKeyPath:@"name"];
+        self.displayName = [self valueOrNilForKeyPath:@"display_name"];
+        
         self.title = [self valueOrNilForKeyPath:@"title"];
+        if (self.title == (id)[NSNull null]) {
+            self.title = @"";
+        }
+        
         self.bio = [self valueOrNilForKeyPath:@"bio"];
+        if (self.bio == (id)[NSNull null]) {
+            self.bio = @"";
+        }
+        
         self.facts = [self valueOrNilForKeyPath:@"facts"];
+        if (self.facts == (id)[NSNull null]) {
+            self.facts = @"";
+        }
+        
         self.advice = [self valueOrNilForKeyPath:@"advice"];
+        if (self.advice == (id)[NSNull null]) {
+            self.advice = @"";
+        }
+        
         self.goals = [self valueOrNilForKeyPath:@"goals"];
+        if (self.goals == (id)[NSNull null]) {
+            self.goals = @"";
+        }
+        
         self.quotes = [self valueOrNilForKeyPath:@"quotes"];
+        if (self.quotes == (id)[NSNull null]) {
+            self.quotes = @"";
+        }
+        
         self.numFaves = [self valueOrNilForKeyPath:@"num_favorites"];
         self.numShares = [self valueOrNilForKeyPath:@"num_shares"];
         self.videos = [self valueOrNilForKeyPath:@"heroine_videos"];
+        
         self.twitterHandle = [self valueOrNilForKeyPath:@"twitter_handle"];
         if (self.twitterHandle == (id)[NSNull null]) {
             self.twitterHandle = @"";
         }
+        
         if (self.videos.count > 0) {
             self.videoLink = [NSURL URLWithString:[[self.videos objectAtIndex:0] objectForKey:@"video_link"]];
         } else {
             self.videoLink = [NSURL URLWithString:@"http://www.youtube.com/watch?v=xyKXBxK82LE"];
         }
+        
+        NSString *url = [self valueOrNilForKeyPath:@"image"];
+        if (url == (id)[NSNull null] || url.length == 0) {
+            self.photoUrl = [[NSURL alloc] initWithString:@"http://i.imgur.com/jCFh1vu.jpg"];
+           // alt. http://i.imgur.com/jf4ykJD.jpg
+            
+        } else {
+           self.photoUrl = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"%@%@", @"http://localhost:3000", url]];
+        }
+        
+        
+        
 
     }
     return self;

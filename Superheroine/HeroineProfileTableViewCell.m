@@ -49,7 +49,13 @@
 
 - (IBAction)watchVideo:(id)sender {
     NSLog(@"I was clicked: %@", self.card.videoLink);
-    [[UIApplication sharedApplication] openURL:self.card.videoLink];
+    
+    if (self.card.videoLink) {
+        [[UIApplication sharedApplication] openURL:self.card.videoLink];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.youtube.com/watch?v=xyKXBxK82LE"]];
+    }
+
 }
 
 

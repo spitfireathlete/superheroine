@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) NSArray *superpowers;
 
+
 + (NSMutableArray *)superheroinesFromArray:(NSArray *)array;
 
 @end

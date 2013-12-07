@@ -52,6 +52,7 @@
 		EA51031C1852ACCC0072EEAE /* paper_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = EA51031B1852ACCC0072EEAE /* paper_pattern.png */; };
 		EA51031E1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA51031D1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib */; };
 		EA5103211852AD260072EEAE /* ComicBookSquareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5103201852AD260072EEAE /* ComicBookSquareTableViewCell.m */; };
+		EA51032418531C870072EEAE /* SuperHeroineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA51032318531C870072EEAE /* SuperHeroineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,8 @@
 		EA51031D1852AD1A0072EEAE /* ComicBookSquareTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComicBookSquareTableViewCell.xib; sourceTree = "<group>"; };
 		EA51031F1852AD260072EEAE /* ComicBookSquareTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicBookSquareTableViewCell.h; sourceTree = "<group>"; };
 		EA5103201852AD260072EEAE /* ComicBookSquareTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicBookSquareTableViewCell.m; sourceTree = "<group>"; };
+		EA51032218531C870072EEAE /* SuperHeroineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperHeroineViewController.h; sourceTree = "<group>"; };
+		EA51032318531C870072EEAE /* SuperHeroineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperHeroineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,10 +282,13 @@
 		EA16C60018516949000E5B54 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EA16C607185169A0000E5B54 /* CreateCardViewController.h */,
-				EA16C608185169A0000E5B54 /* CreateCardViewController.m */,
+
+				EA51032218531C870072EEAE /* SuperHeroineViewController.h */,
+				EA51032318531C870072EEAE /* SuperHeroineViewController.m */,
 				EA16C61A1851D46E000E5B54 /* CardsViewController.h */,
 				EA16C61B1851D46E000E5B54 /* CardsViewController.m */,
+				EA16C607185169A0000E5B54 /* CreateCardViewController.h */,
+				EA16C608185169A0000E5B54 /* CreateCardViewController.m */,
 				EA16C610185169D6000E5B54 /* MainNavigationViewController.h */,
 				EA16C611185169D6000E5B54 /* MainNavigationViewController.m */,
 				EA16C60A185169B0000E5B54 /* HeroineViewController.h */,
@@ -457,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA51032418531C870072EEAE /* SuperHeroineViewController.m in Sources */,
 				021B0F391852A8FD0026FAF5 /* User.m in Sources */,
 				021B0F2E1852A49C0026FAF5 /* CredentialStore.m in Sources */,
 				EA5103211852AD260072EEAE /* ComicBookSquareTableViewCell.m in Sources */,

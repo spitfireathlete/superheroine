@@ -12,6 +12,7 @@
 
 - (id) initWithDictionary:(NSDictionary *)data {
     if (self = [super initWithDictionary:data]) {
+
     }
     return self;
 }

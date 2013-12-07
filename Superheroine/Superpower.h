@@ -10,6 +10,7 @@
 
 @interface Superpower : RestObject
 
+
 + (NSMutableArray *)superpowersFromArray:(NSArray *)array;
 
 @end

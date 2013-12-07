@@ -45,7 +45,7 @@
         NSData *data = [NSData dataWithContentsOfURL:self.card.photoUrl];
         UIImage *image1 = [[UIImage alloc] initWithData:data];
         
-        UIImage *image2 = [UIImage imageNamed:@"Supergirl.png"];
+        UIImage *image2 = self.card.alterEgo.superheroineImage;
         
         CGSize size = CGSizeMake(image1.size.width, image1.size.height + image2.size.height);
         

@@ -18,7 +18,6 @@
 @implementation HeroineViewController
 
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -45,6 +44,7 @@
         headerCell.title.text = self.selectedCard.title;
         headerCell.twitterHandle.text = self.selectedCard.twitterHandle;
         headerCell.numInspired.text = [NSString stringWithFormat:@"%@", self.selectedCard.numFaves];
+        headerCell.card = self.selectedCard;
         return headerCell;
     }
     

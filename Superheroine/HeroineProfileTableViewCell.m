@@ -25,11 +25,14 @@
 }
 
 - (IBAction)tweet:(id)sender {
+    
 }
 
 - (IBAction)favorite:(id)sender {
 }
 
 - (IBAction)watchVideo:(id)sender {
+    NSLog(@"I was clicked: %@", self.card.videoLink);
+    [[UIApplication sharedApplication] openURL:self.card.videoLink];
 }
 @end

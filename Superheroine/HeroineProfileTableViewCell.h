@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Card.h"
 
 @interface HeroineProfileTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *heroinePhoto;
@@ -17,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *twitterHandle;
 @property (strong, nonatomic) IBOutlet UILabel *numInspired;
 @property (strong, nonatomic) IBOutlet UIButton *watchVideo;
+
+@property (strong, nonatomic) Card *card;
 
 - (IBAction)tweet:(id)sender;
 - (IBAction)favorite:(id)sender;

@@ -26,6 +26,8 @@
 @property (nonatomic, strong) NSURL *videoLink;
 @property (nonatomic, strong) NSString *twitterHandle;
 
+@property (nonatomic, strong) NSURL *photoUrl;
+
 @property (nonatomic, strong) Superheroine *alterEgo;
 
 + (NSMutableArray *)cardsFromArray:(NSArray *)array;

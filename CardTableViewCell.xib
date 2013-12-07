@@ -65,6 +65,7 @@
                 <outlet property="fullName" destination="dQh-BQ-1ch" id="cab-xx-LYn"/>
                 <outlet property="numFavorites" destination="3U3-7g-NWB" id="3O9-3v-h4R"/>
                 <outlet property="numShares" destination="wtZ-6L-R0F" id="yoE-uv-C8Z"/>
+                <outlet property="profilePicture" destination="8jC-8O-yAg" id="N8x-52-QtS"/>
                 <outlet property="title" destination="GwD-t7-YAt" id="vSb-lM-iwR"/>
             </connections>
         </tableViewCell>

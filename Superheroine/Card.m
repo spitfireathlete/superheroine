@@ -60,11 +60,24 @@
         if (self.twitterHandle == (id)[NSNull null]) {
             self.twitterHandle = @"";
         }
+        
         if (self.videos.count > 0) {
             self.videoLink = [NSURL URLWithString:[[self.videos objectAtIndex:0] objectForKey:@"video_link"]];
         } else {
             self.videoLink = [NSURL URLWithString:@"http://www.youtube.com/watch?v=xyKXBxK82LE"];
         }
+        
+        NSString *url = [self valueOrNilForKeyPath:@"image"];
+        if (url == (id)[NSNull null] || url.length == 0) {
+            self.photoUrl = [[NSURL alloc] initWithString:@"http://i.imgur.com/jCFh1vu.jpg"];
+           // alt. http://i.imgur.com/jf4ykJD.jpg
+            
+        } else {
+           self.photoUrl = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"%@%@", @"http://localhost:3000", url]];
+        }
+        
+        
+        
 
     }
     return self;

@@ -11,6 +11,7 @@
 #import "ComicBookSquareTableViewCell.h"
 #import "SuperHeroineViewController.h"
 #import "Card.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface HeroineViewController ()
 
@@ -46,6 +47,7 @@
         headerCell.twitterHandle.text = self.selectedCard.twitterHandle;
         headerCell.numInspired.text = [NSString stringWithFormat:@"%@", self.selectedCard.numFaves];
         headerCell.card = self.selectedCard;
+        [headerCell.heroinePhoto setImageWithURL:self.selectedCard.photoUrl];
         return headerCell;
     }
     

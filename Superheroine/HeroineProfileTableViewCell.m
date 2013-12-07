@@ -37,7 +37,7 @@
 - (IBAction)tweet:(id)sender {
     if ([User userHasAccessToTwitter]) {
         NSLog(@"tweeet");
-        [self doTweet];
+        [self postImage:[UIImage imageNamed:@"Supergirl.png"]  withStatus:@"test post using ios sdk"];
     } else {
         NSLog(@"nope");
     }
@@ -49,70 +49,60 @@
 - (IBAction)watchVideo:(id)sender {
 }
 
-- (void) doTweet {
-    //  Step 1:  Obtain access to the user's Twitter accounts
-    ACAccountType *twitterAccountType =
-    [self.accountStore accountTypeWithAccountTypeIdentifier:
-     ACAccountTypeIdentifierTwitter];
+
+- (void)postImage:(UIImage *)image withStatus:(NSString *)status
+{
+    ACAccountType *twitterType =
+    [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     
-    [self.accountStore
-     requestAccessToAccountsWithType:twitterAccountType
-     options:NULL
-     completion:^(BOOL granted, NSError *error) {
-         if (granted) {
-             //  Step 2:  Create a request
-             NSArray *twitterAccounts =
-             [self.accountStore accountsWithAccountType:twitterAccountType];
-             
-             NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"
-                           @"/1.1/statuses/user_timeline.json"];
-             NSDictionary *params = @{@"screen_name" : [[twitterAccounts lastObject] username],
-                                      @"include_rts" : @"0",
-                                      @"trim_user" : @"1",
-                                      @"count" : @"1"};
-             SLRequest *request =
-             [SLRequest requestForServiceType:SLServiceTypeTwitter
-                                requestMethod:SLRequestMethodGET
-                                          URL:url
-                                   parameters:params];
-             
-             //  Attach an account to the request
-             [request setAccount:[twitterAccounts lastObject]];
-             
-             //  Step 3:  Execute the request
-             [request performRequestWithHandler:
-              ^(NSData *responseData,
-                NSHTTPURLResponse *urlResponse,
-                NSError *error) {
-                  
-                  if (responseData) {
-                      if (urlResponse.statusCode >= 200 &&
-                          urlResponse.statusCode < 300) {
-                          
-                          NSError *jsonError;
-                          NSDictionary *timelineData =
-                          [NSJSONSerialization
-                           JSONObjectWithData:responseData
-                           options:NSJSONReadingAllowFragments error:&jsonError];
-                          if (timelineData) {
-                              NSLog(@"Timeline Response: %@\n", timelineData);
-                          }
-                          else {
-                              // Our JSON deserialization went awry
-                              NSLog(@"JSON Error: %@", [jsonError localizedDescription]);
-                          }
-                      }
-                      else {
-                          // The server did not respond ... were we rate-limited?
-                          NSLog(@"The response status code is %lu", urlResponse.statusCode);
-                      }
-                  }
-              }];
-         }
-         else {
-             // Access was not granted, or an error occurred
-             NSLog(@"%@", [error localizedDescription]);
-         }
-     }];
+    SLRequestHandler requestHandler =
+    ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        if (responseData) {
+            NSInteger statusCode = urlResponse.statusCode;
+            if (statusCode >= 200 && statusCode < 300) {
+                NSDictionary *postResponseData =
+                [NSJSONSerialization JSONObjectWithData:responseData
+                                                options:NSJSONReadingMutableContainers
+                                                  error:NULL];
+                NSLog(@"[SUCCESS!] Created Tweet with ID: %@", postResponseData[@"id_str"]);
+            }
+            else {
+                NSLog(@"[ERROR] Server responded: status code %lu %@", statusCode,
+                      [NSHTTPURLResponse localizedStringForStatusCode:statusCode]);
+            }
+        }
+        else {
+            NSLog(@"[ERROR] An error occurred while posting: %@", [error localizedDescription]);
+        }
+    };
+    
+    ACAccountStoreRequestAccessCompletionHandler accountStoreHandler =
+    ^(BOOL granted, NSError *error) {
+        if (granted) {
+            NSArray *accounts = [self.accountStore accountsWithAccountType:twitterType];
+            NSURL *url = [NSURL URLWithString:@"https://api.twitter.com"
+                          @"/1.1/statuses/update_with_media.json"];
+            NSDictionary *params = @{@"status" : status};
+            SLRequest *request = [SLRequest requestForServiceType:SLServiceTypeTwitter
+                                                    requestMethod:SLRequestMethodPOST
+                                                              URL:url
+                                                       parameters:params];
+            NSData *imageData = UIImageJPEGRepresentation(image, 1.f);
+            [request addMultipartData:imageData
+                             withName:@"media[]"
+                                 type:@"image/jpeg"
+                             filename:@"image.jpg"];
+            [request setAccount:[accounts lastObject]];
+            [request performRequestWithHandler:requestHandler];
+        }
+        else {
+            NSLog(@"[ERROR] An error occurred while asking for user authorization: %@",
+                  [error localizedDescription]);
+        }
+    };
+    
+    [self.accountStore requestAccessToAccountsWithType:twitterType
+                                               options:NULL
+                                            completion:accountStoreHandler];
 }
 @end

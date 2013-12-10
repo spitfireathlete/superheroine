@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D0D5B2DC-8902-4F9C-B72F-E8397F44BCF6</string>
+	<string>831EE86D-7F69-4AF6-B50F-FEF98716AFD8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Superheroine</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F59B0D4A-4740-4029-925B-F0F398D390DD</key>
-		<string>https://github.com/spitfireathlete/superheroine.git</string>
+		<key>9B59FD9C-1D8E-4B21-929C-C1BBFC660209</key>
+		<string>ssh://work.github.com/spitfireathlete/superheroine.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Superheroine.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F59B0D4A-4740-4029-925B-F0F398D390DD</key>
+		<key>9B59FD9C-1D8E-4B21-929C-C1BBFC660209</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/spitfireathlete/superheroine.git</string>
+	<string>ssh://work.github.com/spitfireathlete/superheroine.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F59B0D4A-4740-4029-925B-F0F398D390DD</string>
+	<string>9B59FD9C-1D8E-4B21-929C-C1BBFC660209</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F59B0D4A-4740-4029-925B-F0F398D390DD</string>
+			<string>9B59FD9C-1D8E-4B21-929C-C1BBFC660209</string>
 			<key>IDESourceControlWCCName</key>
-			<string>superheroine</string>
+			<string>Superheroine</string>
 		</dict>
 	</array>
 </dict>

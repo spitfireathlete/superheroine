@@ -9,11 +9,11 @@
             <objects>
                 <viewController storyboardIdentifier="HeroineViewController" id="vnB-Eo-9lc" customClass="HeroineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uaD-El-bDH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="824"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lWc-Yx-pSW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="824"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -60,7 +60,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="SuperHeroineViewController" id="k35-Wb-pmV" customClass="SuperHeroineViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mul-tE-pba">
-                        <rect key="frame" x="0.0" y="94" width="320" height="386"/>
+                        <rect key="frame" x="0.0" y="94" width="320" height="474"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -98,15 +98,15 @@
             <objects>
                 <viewController storyboardIdentifier="CreateCardViewController" id="cwi-bb-CtP" customClass="CreateCardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DOF-ct-Pbb">
-                        <rect key="frame" x="0.0" y="64" width="320" height="952"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="1208"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="vzO-Vx-HEH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="952"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1208"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="KTZ-Rr-SV6">
-                                        <rect key="frame" x="0.0" y="-50" width="320" height="1314"/>
+                                        <rect key="frame" x="0.0" y="-50" width="320" height="1570"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1X6-MC-CXZ">
@@ -293,7 +293,7 @@
             <objects>
                 <tableViewController id="Sqj-Z4-yeN" customClass="SuperheroineListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="Fem-LV-Tw5">
-                        <rect key="frame" x="0.0" y="64" width="320" height="824"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="1144"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -331,7 +331,7 @@
             <objects>
                 <viewController id="pYE-Ph-nik" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q7v-BB-JfK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -350,7 +350,7 @@
             <objects>
                 <viewController storyboardIdentifier="MainNavigationViewController" id="x2E-O0-vFR" customClass="MainNavigationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uqR-Cx-5Ub">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUPERHEROINE JUSTICE LEAGUE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4lm-rB-UQf">
@@ -384,15 +384,6 @@
                                     <segue destination="azp-Ar-5Jq" kind="custom" customClass="SWRevealViewControllerSegue" id="EqM-Nc-1ax"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cvb-Yh-rZ6">
-                                <rect key="frame" x="10" y="513" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="LOGOUT">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -406,11 +397,11 @@
             <objects>
                 <viewController storyboardIdentifier="CardsViewController" id="azp-Ar-5Jq" customClass="CardsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I8I-O8-hco">
-                        <rect key="frame" x="0.0" y="64" width="320" height="824"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pIr-ZR-FMz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="824"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -490,14 +481,15 @@
     </scenes>
     <resources>
         <image name="menu_icon.png" width="20" height="20"/>
+        <image name="menu_icon.png" width="20" height="20"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8V1-ak-Yfj"/>
-        <segue reference="pYn-4t-jFB"/>
+        <segue reference="NgZ-Xz-xWc"/>
+        <segue reference="EqM-Nc-1ax"/>
     </inferredMetricsTieBreakers>
 </document>

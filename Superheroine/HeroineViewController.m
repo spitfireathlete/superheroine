@@ -63,7 +63,28 @@
         headerCell.twitterHandle.text = self.selectedCard.twitterHandle;
         headerCell.numInspired.text = [NSString stringWithFormat:@"%@", self.selectedCard.numFaves];
         headerCell.card = self.selectedCard;
-        [headerCell.heroinePhoto setImageWithURL:self.selectedCard.photoUrl];
+        // [headerCell.heroinePhoto setImageWithURL:self.selectedCard.photoUrl];
+        
+        if ([self.selectedCard.displayName isEqualToString:@"Esraa Abdel Fattah"]) {
+            [headerCell.heroinePhoto setImage:[UIImage imageNamed:@"Esraa.png"]];
+        }
+        
+        if ([self.selectedCard.displayName isEqualToString:@"Fernanda Borges"]) {
+            [headerCell.heroinePhoto setImage:[UIImage imageNamed:@"Fernanda.png"]];
+        }
+        
+        if ([self.selectedCard.displayName isEqualToString:@"Michele Titolo"]) {
+            [headerCell.heroinePhoto setImage:[UIImage imageNamed:@"Michele.png"]];
+        }
+        
+        if ([self.selectedCard.displayName isEqualToString:@"Megan Quinn"]) {
+            [headerCell.heroinePhoto setImage:[UIImage imageNamed:@"MeganQuinn.png"]];
+        }
+        
+        if ([self.selectedCard.displayName isEqualToString:@"Hafsat Abiola"]) {
+            [headerCell.heroinePhoto setImage:[UIImage imageNamed:@"Hafsat.png"]];
+        }
+        
         return headerCell;
     }
     

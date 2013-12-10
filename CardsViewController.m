@@ -71,7 +71,34 @@
     cell.title.text = card.title;
     cell.numFavorites.text = [NSString stringWithFormat:@"%@", card.numFaves];
     cell.numShares.text = [NSString stringWithFormat:@"%@", card.numShares];
-    [cell.profilePicture setImageWithURL:card.photoUrl];
+    // original code:     [cell.profilePicture setImageWithURL:card.photoUrl];
+    
+    // iOS Demo Code Only
+    NSIndexPath *firstRow = [NSIndexPath indexPathForRow:0 inSection:0];
+    if ([indexPath isEqual:firstRow]) {
+        [cell.profilePicture setImage:[UIImage imageNamed:@"Esraa.png"]];
+    }
+    
+    NSIndexPath *secondRow = [NSIndexPath indexPathForRow:1 inSection:0];
+    if ([indexPath isEqual:secondRow]) {
+        [cell.profilePicture setImage:[UIImage imageNamed:@"Fernanda.png"]];
+    }
+
+    NSIndexPath *thirdRow = [NSIndexPath indexPathForRow:2 inSection:0];
+    if ([indexPath isEqual:thirdRow]) {
+        [cell.profilePicture setImage:[UIImage imageNamed:@"Michele.png"]];
+    }
+    
+    NSIndexPath *fourthRow = [NSIndexPath indexPathForRow:3 inSection:0];
+    if ([indexPath isEqual:fourthRow]) {
+        [cell.profilePicture setImage:[UIImage imageNamed:@"Hafsat.png"]];
+    }
+    
+    NSIndexPath *fifthRow = [NSIndexPath indexPathForRow:4 inSection:0];
+    if ([indexPath isEqual:fifthRow]) {
+        [cell.profilePicture setImage:[UIImage imageNamed:@"MeganQuinn.png"]];
+    }
+    
     return cell;
 }
 
